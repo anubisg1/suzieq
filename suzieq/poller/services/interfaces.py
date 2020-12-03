@@ -48,6 +48,7 @@ class InterfaceService(Service):
                 entry['macaddr'] = '00:00:00:00:00:00'
                 entry['master'] = ''
                 entry['state'] = 'up'
+                entry['adminState'] = 'up'
                 continue
 
             if entry['type'] == 'varp':
@@ -215,6 +216,10 @@ class InterfaceService(Service):
             if entry['type'] is None:
                 continue
 
+            if entry['type'] == 'virtual-switch':
+                # TODO: Handle this properly
+                continue
+
             if not entry_dict[entry['ifname']]:
                 entry_dict[entry['ifname']] = entry
 
@@ -226,11 +231,12 @@ class InterfaceService(Service):
             if entry['type']:
                 entry['type'] = entry['type'].lower()
 
-            ts = get_timestamp_from_junos_time(
-                entry['statusChangeTimestamp'], raw_data[0]['timestamp']/1000)
-            entry['statusChangeTimestamp'] = int(ts)
+            if 'statusChangeTimestamp' in entry:
+                ts = get_timestamp_from_junos_time(
+                    entry['statusChangeTimestamp'], raw_data[0]['timestamp']/1000)
+                entry['statusChangeTimestamp'] = int(ts)
 
-            if entry['speed']:
+            if entry.get('speed', ''):
                 if entry['speed'].endswith('mbps'):
                     entry['speed'] = int(entry['speed'].split('mb')[0])
                 elif entry['speed'].endswith('Gbps'):
@@ -292,6 +298,7 @@ class InterfaceService(Service):
                              'type': 'logical',
                              'speed': entry['speed'],
                              'master': vrf,
+                             'adminState': 'up',
                              'description': entry['description'],
                              'statusChangeTimestamp':
                              entry['statusChangeTimestamp'],
@@ -333,9 +340,6 @@ class InterfaceService(Service):
         """Complex cleanup of NXOS interface data"""
         new_entries = []
         unnum_intf = {}
-        add_bridge_intf = False
-        bridge_intf_state = "down"
-        bridge_mtu = 1500
 
         unnum_intf_entry_idx = []  # backtrack to interface to fix
 
@@ -344,6 +348,7 @@ class InterfaceService(Service):
             entry["statusChangeTimestamp1"] = entry.get(
                 "statusChangeTimestamp", '')
 
+            entry['state'] = entry.get('state', 'unknown').lower()
             if entry.get('vrf', 'default') != 'default':
                 entry['master'] = entry['vrf']
             else:
@@ -351,7 +356,7 @@ class InterfaceService(Service):
 
             if 'routeDistinguisher' in entry:
                 entry['macaddr'] = "00:00:00:00:00:00"
-                entry['adminState'] = entry.get("state", "up")
+                entry['adminState'] = entry.get("state", "up").lower()
                 continue
 
             if 'reason' in entry:
@@ -360,14 +365,15 @@ class InterfaceService(Service):
                 else:
                     entry['adminState'] = 'up'
 
+                if entry['reason'] is not None:
+                    entry['reason'] = entry['reason'].lower()
+
+                if entry['reason'] == 'none' or not entry['reason']:
+                    entry['reason'] = ''
+
             portmode = entry.get('_portmode', '')
             if portmode == 'access' or portmode == 'trunk':
                 entry['master'] = 'bridge'
-                add_bridge_intf = True
-                if entry.get('state', '') == "up":
-                    bridge_intf_state = "up"
-                if entry.get('mtu', 1500) < bridge_mtu:
-                    bridge_mtu = entry.get('mtu', 0)
 
             portchan = entry.get('_portchannel', '')
             if portchan:
