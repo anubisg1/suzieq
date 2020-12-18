@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 from .engineobj import SqEngineObject
-from suzieq.utils import build_query_str, SchemaForTable
+from suzieq.utils import build_query_str, SchemaForTable, humanize_timestamp
 
 
 class BgpObj(SqEngineObject):
@@ -20,21 +20,20 @@ class BgpObj(SqEngineObject):
 
         drop_cols = ['origPeer', 'peerHost']
         addnl_fields.extend(['origPeer'])
+        sch = SchemaForTable(self.iobj.table, self.schemas)
+        fields = sch.get_display_fields(columns)
 
-        if columns != ['*']:
-            if 'peerIP' not in columns:
-                addnl_fields.append('peerIP')
-                drop_cols.append('peerIP')
-            if 'updateSource' not in columns:
-                addnl_fields.append('updateSource')
-                drop_cols.append('updateSource')
+        for col in ['peerIP', 'updateSource', 'state', 'namespace', 'vrf',
+                    'peer', 'hostname']:
+            if col not in fields:
+                addnl_fields.append(col)
+                drop_cols.append(col)
 
         df = super().get(addnl_fields=addnl_fields, **kwargs)
 
         if df.empty:
             return df
 
-        sch = SchemaForTable(self.iobj.table, self.schemas)
         query_str = build_query_str([], sch, vrf=vrf, peer=peer,
                                     hostname=hostname)
         if 'peer' in df.columns:
@@ -100,8 +99,9 @@ class BgpObj(SqEngineObject):
 
         self._gen_summarize_data()
 
-        self.summary_df['estdTime'] = pd.to_datetime(
-            self.summary_df['estdTime'], unit='ms')
+        self.summary_df['estdTime'] = humanize_timestamp(
+            self.summary_df.estdTime)
+
         self.summary_df['estdTime'] = (
             self.summary_df['timestamp'] - self.summary_df['estdTime'])
         self.summary_df['estdTime'] = self.summary_df['estdTime'] \

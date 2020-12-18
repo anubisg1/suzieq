@@ -8,7 +8,7 @@ class RoutesObj(SqObject):
         self._addnl_filter = 'metric != 4278198272'
         self._valid_get_args = ['namespace', 'hostname', 'columns', 'prefix',
                                 'vrf', 'protocol', 'prefixlen', 'ipvers',
-                                'add_filter', 'address']
+                                'add_filter', 'address', 'query_str']
 
     def lpm(self, **kwargs):
         '''Get the lpm for the given address'''
@@ -20,11 +20,13 @@ class RoutesObj(SqObject):
             kwargs['address'] = kwargs['address'][0]
         return self.engine_obj.lpm(**kwargs)
 
-    def summarize(self, namespace=[], vrf=[], hostname=[]):
+    def summarize(self, namespace=[], vrf=[], hostname=[], query_str=''):
         """Summarize routing info for one or more namespaces"""
         if self.columns != ["default"]:
             self.summarize_df = pd.DataFrame(
-                {'error': ['ERROR: You cannot specify columns with summarize']})
+                {'error':
+                 ['ERROR: You cannot specify columns with summarize']})
             return self.summarize_df
         return self.engine_obj.summarize(namespace=namespace, vrf=vrf,
+                                         query_str=query_str,
                                          hostname=hostname)

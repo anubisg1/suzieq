@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import pyarrow as pa
-from suzieq.utils import SchemaForTable
-from dateutil.parser import parse, ParserError
+from suzieq.utils import SchemaForTable, humanize_timestamp
+import dateparser
+from datetime import datetime
 
 
 class SqEngineObject(object):
@@ -52,10 +53,19 @@ class SqEngineObject(object):
         addnl_fields = kwargs.pop('addnl_fields', [])
         view = kwargs.pop('view', self.iobj.view)
         active_only = kwargs.pop('active_only', True)
+        query_str = kwargs.pop('query_str', '')
+
+        # The REST API provides the query_str enclosed in ". Strip that
+        if query_str:
+            if query_str.startswith('"') and query_str.endswith('"'):
+                query_str = query_str[1:-1]
 
         fields = sch.get_display_fields(columns)
         key_fields = sch.key_fields()
         drop_cols = []
+
+        if columns == ['*']:
+            drop_cols.append('sqvers')
 
         if 'timestamp' not in fields:
             fields.append('timestamp')
@@ -74,19 +84,43 @@ class SqEngineObject(object):
                 # timestamp is always the last field
                 fields.insert(-1, f)
 
-        for dt in [self.iobj.start_time, self.iobj.end_time]:
-            if dt:
-                try:
-                    parse(dt)
-                except (ValueError, ParserError) as e:
-                    print(f"invalid time {dt}: {e}")
-                    return pd.DataFrame()
+        if self.iobj.start_time:
+            try:
+                start_time = datetime.utcfromtimestamp(dateparser.parse(
+                    self.iobj.start_time.replace('last night', 'yesterday'))
+                    .timestamp()).timestamp()*1000
+            except Exception as e:
+                print(f"ERROR: invalid time {self.iobj.start_time}: {e}")
+                return pd.DataFrame()
+        else:
+            start_time = ''
+
+        if self.iobj.start_time and not start_time:
+            # Something went wrong with our parsing
+            print(f"ERROR: unable to parse {self.iobj.start_time}")
+            return pd.DataFrame()
+
+        if self.iobj.end_time:
+            try:
+                end_time = datetime.utcfromtimestamp(dateparser.parse(
+                    self.iobj.end_time.replace('last night', 'yesterday'))
+                    .timestamp()).timestamp()*1000
+            except Exception as e:
+                print(f"ERROR: invalid time {self.iobj.end_time}: {e}")
+                return pd.DataFrame()
+        else:
+            end_time = ''
+
+        if self.iobj.end_time and not end_time:
+            # Something went wrong with our parsing
+            print(f"ERROR: Unable to parse {self.iobj.end_time}")
+            return pd.DataFrame()
 
         table_df = self.ctxt.engine.get_table_df(
             self.cfg,
             table=phy_table,
-            start_time=self.iobj.start_time,
-            end_time=self.iobj.end_time,
+            start_time=start_time,
+            end_time=end_time,
             columns=fields,
             view=view,
             key_fields=key_fields,
@@ -100,10 +134,12 @@ class SqEngineObject(object):
             else:
                 table_df.drop(columns=drop_cols, inplace=True)
             if 'timestamp' in table_df.columns:
-                table_df['timestamp'] = pd.to_datetime(
-                    table_df.timestamp.astype(str), unit="ms")
+                table_df['timestamp'] = humanize_timestamp(table_df.timestamp)
 
-        return table_df
+        if query_str:
+            return table_df.query(query_str)
+        else:
+            return table_df
 
     def get(self, **kwargs):
         if not self.iobj.table:
@@ -192,10 +228,7 @@ class SqEngineObject(object):
                                             observed=True)[field] \
                     .agg(func)
                 for i in self.ns.keys():
-                    if i in fld_per_ns:
-                        self.ns[i].update({field_name: fld_per_ns[i]})
-                    else:
-                        self.ns[i].update({field_name: 0})
+                    self.ns[i].update({field_name: fld_per_ns.get(i, 0)})
             else:
                 for i in self.ns.keys():
                     self.ns[i].update({field_name: 0})
@@ -330,7 +363,9 @@ class SqEngineObject(object):
     def _init_summarize(self, table, **kwargs):
         kwargs.pop('columns', None)
         columns = ['*']
+
         df = self.get(columns=columns, **kwargs)
+
         self.summary_df = df
         if df.empty:
             return df
@@ -366,7 +401,7 @@ class SqEngineObject(object):
         if not field_name:
             field_name = field
         field_per_ns = getattr(self.nsgrp[field], method)()
-        {self.ns[i].update({field_name: field_per_ns[i]})
+        {self.ns[i].update({field_name: field_per_ns.get(i, 0)})
          for i in self.ns.keys()}
 
     def _add_list_or_count_to_summary(self, field, field_name=None):

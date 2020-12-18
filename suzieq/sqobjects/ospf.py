@@ -1,7 +1,8 @@
 import pandas as pd
+import numpy as np
 
 from suzieq.sqobjects.basicobj import SqObject
-from suzieq.utils import SchemaForTable
+from suzieq.utils import SchemaForTable, humanize_timestamp
 
 
 class OspfObj(SqObject):
@@ -10,7 +11,7 @@ class OspfObj(SqObject):
         self._addnl_fields = ['passive', 'area', 'state']
         self._addnl_nbr_fields = ['state']
         self._valid_get_args = ['namespace', 'hostname', 'columns',
-                                'vrf', 'ifname', 'state']
+                                'vrf', 'ifname', 'state', 'query_str']
         self._valid_assert_args = ['namespace', 'vrf', 'status']
         self._valid_arg_vals = {
             'state': ['full', 'other', 'passive', ''],
@@ -47,3 +48,18 @@ class OspfObj(SqObject):
             self._addnl_nbr_fields.append(what)
 
         return self.engine_obj.top(what=what, n=n, reverse=reverse, **kwargs)
+
+    def humanize_fields(self, df: pd.DataFrame, subset=None) -> pd.DataFrame:
+        '''Humanize the timestamp and boot time fields'''
+        if df.empty:
+            return df
+
+        if 'lastChangeTime' in df.columns:
+            df['lastChangeTime'] = humanize_timestamp(
+                df.lastChangeTime.fillna(0))
+
+            if 'adjState' in df.columns:
+                df['lastChangeTime'] = np.where(df.adjState == "passive", "-",
+                                                df.lastChangeTime)
+
+        return df

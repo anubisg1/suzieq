@@ -7,6 +7,7 @@ import json
 import yaml
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
+from tzlocal import get_localzone
 
 import pandas as pd
 import pyarrow as pa
@@ -139,16 +140,18 @@ class Schema(object):
         # return [f['name'] for f in self._schema[table] if f.get('key', None) is not None]
         return self._sort_fields_for_table(table, 'key')
 
-    def sorted_display_fields_for_table(self, table):
-        return self._sort_fields_for_table(table, 'display')
+    def sorted_display_fields_for_table(self, table, getall=False):
+        return self._sort_fields_for_table(table, 'display', getall)
 
-    def _sort_fields_for_table(self, table, tag):
+    def _sort_fields_for_table(self, table, tag, getall=False):
         fields = self.fields_for_table(table)
         field_weights = {}
         for f_name in fields:
             field = self.field_for_table(table, f_name)
             if field.get(tag, None) is not None:
                 field_weights[f_name] = field.get(tag, 1000)
+            elif getall:
+                field_weights[f_name] = 1000
         return [k for k in sorted(field_weights.keys(),
                                   key=lambda x: field_weights[x])]
 
@@ -251,8 +254,9 @@ class SchemaForTable(object):
     def key_fields(self):
         return self._all_schemas.key_fields_for_table(self._table)
 
-    def sorted_display_fields(self):
-        return self._all_schemas.sorted_display_fields_for_table(self._table)
+    def sorted_display_fields(self, getall=False):
+        return self._all_schemas.sorted_display_fields_for_table(self._table,
+                                                                 getall)
 
     @property
     def array_fields(self):
@@ -269,7 +273,7 @@ class SchemaForTable(object):
             if "namespace" not in fields:
                 fields.insert(0, "namespace")
         elif columns == ["*"]:
-            fields = self.fields
+            fields = self.sorted_display_fields(getall=True)
         else:
             fields = [f for f in columns if f in self.fields]
 
@@ -538,4 +542,14 @@ def build_query_str(skip_fields: list, schema, **kwargs) -> str:
 
 def known_devtypes() -> list:
     """Returns the list of known dev types"""
-    return(['cumulus', 'eos', 'junos-mx', 'junos-qfx', 'junos-ex', 'linux', 'nxos', 'sonic'])
+    return(['cumulus', 'eos', 'junos-mx', 'junos-qfx', 'junos-ex', 'linux',
+            'nxos', 'sonic'])
+
+
+def humanize_timestamp(field: pd.Series) -> pd.Series:
+    '''Convert the UTC timestamp in Dataframe to local time.
+    Use of pd.to_datetime will not work as it converts the timestamp
+    to UTC. If the timestamp is already in UTC format, we get busted time.
+    '''
+    return field.apply(lambda x: datetime.fromtimestamp((int(x)/1000))) \
+                .dt.tz_localize('UTC').dt.tz_convert(get_localzone().zone)

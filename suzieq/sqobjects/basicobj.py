@@ -154,7 +154,8 @@ class SqObject(object):
 
         return self.engine_obj.get(**kwargs)
 
-    def summarize(self, namespace=[], hostname=[]) -> pd.DataFrame:
+    def summarize(self, namespace=[], hostname=[],
+                  query_str='') -> pd.DataFrame:
         if self.columns != ["default"]:
             self.summarize_df = pd.DataFrame(
                 {'error': ['ERROR: You cannot specify columns with summarize']})
@@ -166,7 +167,7 @@ class SqObject(object):
             raise AttributeError('No analysis engine specified')
 
         return self.engine_obj.summarize(namespace=namespace,
-                                         hostname=hostname)
+                                         hostname=hostname, query_str=query_str)
 
     def unique(self, **kwargs) -> pd.DataFrame:
         if not self._table:
@@ -210,3 +211,11 @@ class SqObject(object):
             self._addnl_fields.append(what)
 
         return self.engine_obj.top(what=what, n=n, reverse=reverse, **kwargs)
+
+    def humanize_fields(self, df: pd.DataFrame, subset=None) -> pd.DataFrame:
+        '''Humanize the fields for human consumption.
+
+        Individual classes will implement the right transofmations. This
+        routine is just a placeholder for all those with nothing to modify.
+        '''
+        return df
