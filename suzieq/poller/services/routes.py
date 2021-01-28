@@ -1,4 +1,5 @@
 from suzieq.poller.services.service import Service
+from suzieq.utils import expand_nxos_ifname
 import numpy as np
 
 
@@ -113,6 +114,8 @@ class RoutesService(Service):
             entry['active'] = entry['_activeTag'] in ['*', '@', '#']
 
             entry['metric'] = int(entry['metric'])
+            if entry.get('nexthopIps', '') == [None]:
+                entry['nexthopIps'] = ['']
             entry.pop('_localif')
             entry.pop('_activeTag')
 
@@ -137,8 +140,7 @@ class RoutesService(Service):
             oiflist = []
             for oif in entry['oifs']:
                 if oif:
-                    if 'Eth' in oif:
-                        oif = oif.replace('Eth', 'Ethernet')
+                    oif = expand_nxos_ifname(oif)
                     oiflist.append(oif)
             entry['oifs'] = oiflist
 

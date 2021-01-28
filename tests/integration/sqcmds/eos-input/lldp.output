@@ -1,271 +1,72 @@
 [
     {
         "status": 0,
-        "timestamp": 1606030435359,
+        "timestamp": 1610377086348,
         "cmd": "if systemctl status lldpd > /dev/null 2>&1; then sudo lldpctl; fi",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "edge01",
-        "address": "192.168.121.86",
-        "version": "16.04",
-        "data": "-------------------------------------------------------------------------------\nLLDP neighbors:\n-------------------------------------------------------------------------------\nInterface:    eth1, via: LLDP, RID: 2, Time: 0 day, 00:45:55\n  Chassis:     \n    ChassisID:    mac 52:54:00:54:ac:ad\n    SysName:      exit01\n    MgmtIP:       10.0.0.101\n    Capability:   Bridge, on\n    Capability:   Router, on\n  Port:        \n    PortID:       ifname Ethernet5\n    MFS:          9236\n-------------------------------------------------------------------------------\nInterface:    eth2, via: LLDP, RID: 3, Time: 0 day, 00:36:11\n  Chassis:     \n    ChassisID:    mac 52:54:00:b7:3e:23\n    SysName:      exit02\n    MgmtIP:       10.0.0.102\n    Capability:   Bridge, on\n    Capability:   Router, on\n  Port:        \n    PortID:       ifname Ethernet5\n    MFS:          9236\n-------------------------------------------------------------------------------\n"
-    }
-][
-    {
-        "status": 0,
-        "timestamp": 1606030435413,
-        "cmd": "if systemctl status lldpd > /dev/null 2>&1; then sudo lldpctl; fi",
-        "devtype": "linux",
-        "namespace": "eos",
-        "hostname": "server101",
-        "address": "192.168.121.82",
-        "version": "16.04",
+        "hostname": "server302",
+        "address": "10.255.2.97",
+        "version": "18.04",
         "data": ""
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435414,
+        "timestamp": 1610377086349,
         "cmd": "if systemctl status lldpd > /dev/null 2>&1; then sudo lldpctl; fi",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server103",
-        "address": "192.168.121.121",
-        "version": "16.04",
+        "hostname": "server301",
+        "address": "10.255.2.140",
+        "version": "18.04",
         "data": ""
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435439,
+        "timestamp": 1610377086373,
         "cmd": "if systemctl status lldpd > /dev/null 2>&1; then sudo lldpctl; fi",
         "devtype": "linux",
         "namespace": "eos",
         "hostname": "server102",
-        "address": "192.168.121.26",
-        "version": "16.04",
+        "address": "10.255.2.130",
+        "version": "18.04",
         "data": ""
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435439,
+        "timestamp": 1610377086515,
         "cmd": "if systemctl status lldpd > /dev/null 2>&1; then sudo lldpctl; fi",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server104",
-        "address": "192.168.121.210",
-        "version": "16.04",
+        "hostname": "server101",
+        "address": "10.255.2.240",
+        "version": "18.04",
         "data": ""
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435623,
-        "cmd": "net show lldp json",
-        "devtype": "cumulus",
+        "timestamp": 1610377086574,
+        "cmd": "if systemctl status lldpd > /dev/null 2>&1; then sudo lldpctl; fi",
+        "devtype": "linux",
         "namespace": "eos",
-        "hostname": "internet",
-        "address": "192.168.121.2",
-        "version": "3.7.9",
-        "data": "{\n  \"lldp\": [\n    {\n      \"interface\": [\n        {\n          \"name\": \"swp1\",\n          \"via\": \"LLDP\",\n          \"rid\": \"2\",\n          \"age\": \"0 day, 00:45:26\",\n          \"chassis\": [\n            {\n              \"id\": [\n                {\n                  \"type\": \"mac\",\n                  \"value\": \"52:54:00:54:ac:ad\"\n                }\n              ],\n              \"name\": [\n                {\n                  \"value\": \"exit01\"\n                }\n              ],\n              \"mgmt-ip\": [\n                {\n                  \"value\": \"10.0.0.101\"\n                }\n              ],\n              \"capability\": [\n                {\n                  \"type\": \"Bridge\",\n                  \"enabled\": true\n                },\n                {\n                  \"type\": \"Router\",\n                  \"enabled\": true\n                }\n              ]\n            }\n          ],\n          \"port\": [\n            {\n              \"id\": [\n                {\n                  \"type\": \"ifname\",\n                  \"value\": \"Ethernet6\"\n                }\n              ],\n              \"ttl\": [\n                {\n                  \"value\": \"120\"\n                }\n              ],\n              \"mfs\": [\n                {\n                  \"value\": \"9236\"\n                }\n              ]\n            }\n          ],\n          \"lldp-med\": [\n            {\n              \"device-type\": [\n                {\n                  \"value\": \"Network Connectivity Device\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"name\": \"swp2\",\n          \"via\": \"LLDP\",\n          \"rid\": \"4\",\n          \"age\": \"0 day, 00:36:11\",\n          \"chassis\": [\n            {\n              \"id\": [\n                {\n                  \"type\": \"mac\",\n                  \"value\": \"52:54:00:b7:3e:23\"\n                }\n              ],\n              \"name\": [\n                {\n                  \"value\": \"exit02\"\n                }\n              ],\n              \"mgmt-ip\": [\n                {\n                  \"value\": \"10.0.0.102\"\n                }\n              ],\n              \"capability\": [\n                {\n                  \"type\": \"Bridge\",\n                  \"enabled\": true\n                },\n                {\n                  \"type\": \"Router\",\n                  \"enabled\": true\n                }\n              ]\n            }\n          ],\n          \"port\": [\n            {\n              \"id\": [\n                {\n                  \"type\": \"ifname\",\n                  \"value\": \"Ethernet6\"\n                }\n              ],\n              \"ttl\": [\n                {\n                  \"value\": \"120\"\n                }\n              ],\n              \"mfs\": [\n                {\n                  \"value\": \"9236\"\n                }\n              ]\n            }\n          ],\n          \"lldp-med\": [\n            {\n              \"device-type\": [\n                {\n                  \"value\": \"Network Connectivity Device\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}\n\n"
+        "hostname": "firewall01",
+        "address": "10.255.2.169",
+        "version": "18.04",
+        "data": ""
     }
 ][
     {
         "status": 200,
-        "timestamp": 1606030435509,
-        "cmd": "show lldp neighbors detail",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf01",
-        "address": "192.168.121.5",
-        "data": {
-            "lldpNeighbors": {
-                "Management1": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet2": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001633.654575,
-                            "chassisId": "5254.00ee.6474",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine02",
-                            "lastChangeTime": 1605998813.5479248,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.22",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605996787.7269685,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001625.920014,
-                            "chassisId": "4438.3938.929d",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf02",
-                            "lastChangeTime": 1605998815.957119,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.12",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997297.63456,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet1": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001605.1935222,
-                            "chassisId": "4439.399f.5cd3",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine01",
-                            "lastChangeTime": 1605998815.295576,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.21",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605996628.4409075,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet4": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001625.9181397,
-                            "chassisId": "4438.3938.929d",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf02",
-                            "lastChangeTime": 1605998815.9569087,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.12",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997297.6355228,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": []
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435493,
+        "timestamp": 1610377086522,
         "cmd": "show lldp neighbors detail",
         "devtype": "eos",
         "namespace": "eos",
         "hostname": "exit02",
-        "address": "192.168.121.46",
+        "address": "10.255.2.254",
         "data": {
             "lldpNeighbors": {
                 "Management1": {
@@ -274,20 +75,20 @@
                 "Ethernet2": {
                     "lldpNeighborInfo": [
                         {
-                            "lastContactTime": 1606001607.939904,
-                            "chassisId": "5254.00ee.6474",
+                            "lastContactTime": 1610348266.7353616,
+                            "chassisId": "4438.39fa.7846",
                             "systemCapabilities": {
                                 "bridge": true,
                                 "router": true
                             },
                             "systemName": "spine02",
-                            "lastChangeTime": 1605999325.9579492,
+                            "lastChangeTime": 1609561083.2098994,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
                                 "unknownTlvs": [],
                                 "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet5\"",
+                                "interfaceId": "\"Ethernet6\"",
                                 "autoNegAdvertisedCapabilities": [],
                                 "protocolIdentityInfo": [],
                                 "portAndProtocolVlanSupported": {},
@@ -307,69 +108,31 @@
                                     "addressType": "ipv4"
                                 }
                             ],
-                            "neighborDiscoveryTime": 1605999325.9579492,
+                            "neighborDiscoveryTime": 1609561083.2098994,
                             "chassisIdType": "macAddress"
                         }
                     ]
                 },
                 "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001622.8580365,
-                            "chassisId": "5254.00b7.3e23",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "exit02",
-                            "lastChangeTime": 1605999462.833034,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.102",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605999327.8910625,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
+                    "lldpNeighborInfo": []
                 },
                 "Ethernet1": {
                     "lldpNeighborInfo": [
                         {
-                            "lastContactTime": 1606001607.9179704,
-                            "chassisId": "4439.399f.5cd3",
+                            "lastContactTime": 1610348282.6383133,
+                            "chassisId": "4438.39ba.d234",
                             "systemCapabilities": {
                                 "bridge": true,
                                 "router": true
                             },
                             "systemName": "spine01",
-                            "lastChangeTime": 1605999325.9651175,
+                            "lastChangeTime": 1609561070.204202,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
                                 "unknownTlvs": [],
                                 "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet5\"",
+                                "interfaceId": "\"Ethernet6\"",
                                 "autoNegAdvertisedCapabilities": [],
                                 "protocolIdentityInfo": [],
                                 "portAndProtocolVlanSupported": {},
@@ -389,74 +152,7 @@
                                     "addressType": "ipv4"
                                 }
                             ],
-                            "neighborDiscoveryTime": 1605999325.9651175,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": [
-                        {
-                            "systemCapabilities": {
-                                "bridge": false,
-                                "router": true
-                            },
-                            "lastChangeTime": 1605999327.9001203,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"swp2\"",
-                                "interfaceDescription": "swp2",
-                                "autoNegCapability": "notCapable",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "operMauType": "1000BASE-T (full-duplex)",
-                                "medInfo": {
-                                    "serialNumberTlvInfo": "Not Specified",
-                                    "softwareRevisionTlvInfo": "3.7.9",
-                                    "modelNameTlvInfo": "Standard PC (i440FX + PIIX, 1996",
-                                    "networkPolicies": [],
-                                    "firmwareRevisionTlvInfo": "1.10.2-1ubuntu1",
-                                    "capabilities": {
-                                        "deviceType": "networkConnectivity",
-                                        "networkPolicy": true,
-                                        "inventory": true,
-                                        "capabilities": true,
-                                        "extendedPd": true,
-                                        "extendedPse": true,
-                                        "location": true
-                                    },
-                                    "manufacturerNameTlvInfo": "QEMU"
-                                },
-                                "vlanNames": {},
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "neighborDiscoveryTime": 1605999327.9001203,
-                            "lastContactTime": 1606001626.1309485,
-                            "chassisId": "5254.00b1.16c6",
-                            "systemName": "internet",
-                            "systemDescription": "Cumulus Linux version 3.7.9 running on QEMU Standard PC (i440FX + PIIX, 1996)",
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 1,
-                                    "address": "10.0.0.253",
-                                    "addressType": "ipv4"
-                                },
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 2,
-                                    "address": "fe80::5054:ff:feb1:16c6",
-                                    "addressType": "ipv6"
-                                }
-                            ],
+                            "neighborDiscoveryTime": 1609561070.204202,
                             "chassisIdType": "macAddress"
                         }
                     ]
@@ -464,88 +160,43 @@
                 "Ethernet4": {
                     "lldpNeighborInfo": [
                         {
-                            "lastContactTime": 1606001622.8600717,
-                            "chassisId": "5254.00b7.3e23",
                             "systemCapabilities": {
                                 "bridge": true,
                                 "router": true
                             },
-                            "systemName": "exit02",
-                            "lastChangeTime": 1605999462.8358865,
+                            "lastChangeTime": 1609561087.1306512,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
                                 "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.102",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605999327.8818405,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": [
-                        {
-                            "systemCapabilities": {
-                                "bridge": false,
-                                "wlanAccessPoint": false,
-                                "router": true,
-                                "stationOnly": true
-                            },
-                            "lastChangeTime": 1605999328.1015322,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"eth2\"",
-                                "interfaceDescription": "eth2",
+                                "interfaceIdType": "local",
+                                "interfaceId": "\"517\"",
+                                "interfaceDescription": "xe-0/0/1",
                                 "autoNegCapability": "notCapable",
                                 "autoNegAdvertisedCapabilities": [],
                                 "protocolIdentityInfo": [],
                                 "portAndProtocolVlanSupported": {},
                                 "operMauType": "Unknown",
-                                "vlanNames": {
-                                    "4": "eth2.4",
-                                    "2": "eth2.2"
-                                },
+                                "vlanNames": {},
+                                "maxFrameSize": 1514,
                                 "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
+                                "unknownOrgDefinedTlvs": [
+                                    {
+                                        "ouiStr": "00-90-69",
+                                        "subType": 1,
+                                        "tlvLines": [
+                                            "56 4d 35 45 32 35 36 37 42 35 31 34"
+                                        ]
+                                    }
+                                ]
                             },
-                            "neighborDiscoveryTime": 1605999328.1015322,
-                            "lastContactTime": 1606001608.1074898,
-                            "chassisId": "5254.007b.04d2",
-                            "systemName": "edge01",
-                            "systemDescription": "Ubuntu 16.04.6 LTS Linux 4.4.0-169-generic #198-Ubuntu SMP Tue Nov 12 10:38:00 UTC 2019 x86_64",
+                            "neighborDiscoveryTime": 1609561087.1306512,
+                            "lastContactTime": 1610348274.9357705,
+                            "chassisId": "0205.8671.d000",
+                            "systemName": "dcedge01",
+                            "systemDescription": "Juniper Networks, Inc. vqfx-10000 Ethernet Switch, kernel JUNOS 19.4R1.10, Build date: 2019-12-19 03:14:17 UTC Copyright (c) 1996-2019 Juniper Networks, Inc.",
                             "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 1,
-                                    "address": "10.0.0.100",
-                                    "addressType": "ipv4"
-                                }
-                            ],
+                            "managementAddresses": [],
                             "chassisIdType": "macAddress"
                         }
                     ]
@@ -556,1099 +207,12 @@
 ][
     {
         "status": 200,
-        "timestamp": 1606030435527,
-        "cmd": "show lldp neighbors detail",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf04",
-        "address": "192.168.121.235",
-        "data": {
-            "lldpNeighbors": {
-                "Management1": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet2": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001633.6715527,
-                            "chassisId": "5254.00ee.6474",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine02",
-                            "lastChangeTime": 1605998813.5788577,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.22",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997943.019811,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.727291,
-                            "chassisId": "4438.392f.ce22",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf03",
-                            "lastChangeTime": 1605998829.1782186,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndEnabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 1000012,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.13",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997943.0234354,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet1": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001605.1015458,
-                            "chassisId": "4439.399f.5cd3",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine01",
-                            "lastChangeTime": 1605998815.01751,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.21",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997943.03101,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet4": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.7241395,
-                            "chassisId": "4438.392f.ce22",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf03",
-                            "lastChangeTime": 1605998829.177949,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndEnabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 1000012,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.13",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997943.0513115,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": []
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435547,
-        "cmd": "show lldp neighbors detail",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "spine02",
-        "address": "192.168.121.73",
-        "data": {
-            "lldpNeighbors": {
-                "Management1": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet2": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.0122957,
-                            "chassisId": "4438.3938.929d",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf02",
-                            "lastChangeTime": 1605998816.0441806,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.12",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997297.7325172,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.7988117,
-                            "chassisId": "4438.392f.ce22",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf03",
-                            "lastChangeTime": 1605998815.9655821,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.13",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997311.836339,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet1": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.468879,
-                            "chassisId": "4438.3990.61ba",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf01",
-                            "lastChangeTime": 1605998816.2606657,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.11",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605996787.8325043,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001622.7689822,
-                            "chassisId": "5254.0054.acad",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "exit01",
-                            "lastChangeTime": 1605998859.1781647,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.101",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605996787.839487,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet4": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001627.3476532,
-                            "chassisId": "4438.3993.f18c",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf04",
-                            "lastChangeTime": 1605998826.3297987,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.14",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997943.066537,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001623.0714252,
-                            "chassisId": "5254.00b7.3e23",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "exit02",
-                            "lastChangeTime": 1605999463.0356374,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.102",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605999328.0886667,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435525,
-        "cmd": "show lldp neighbors detail",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf02",
-        "address": "192.168.121.22",
-        "data": {
-            "lldpNeighbors": {
-                "Management1": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet2": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001634.2597332,
-                            "chassisId": "5254.00ee.6474",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine02",
-                            "lastChangeTime": 1605998814.1756287,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.22",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997298.276,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.9886599,
-                            "chassisId": "4438.3990.61ba",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf01",
-                            "lastChangeTime": 1605998816.791469,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.11",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997298.288778,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet1": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001605.8005927,
-                            "chassisId": "4439.399f.5cd3",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine01",
-                            "lastChangeTime": 1605998815.9846444,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet2\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.21",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997298.2870781,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet4": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.9866529,
-                            "chassisId": "4438.3990.61ba",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf01",
-                            "lastChangeTime": 1605998816.7754323,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.11",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997298.2932205,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": []
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435570,
-        "cmd": "show lldp neighbors detail",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "spine01",
-        "address": "192.168.121.42",
-        "data": {
-            "lldpNeighbors": {
-                "Management1": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet2": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001625.9937441,
-                            "chassisId": "4438.3938.929d",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf02",
-                            "lastChangeTime": 1605998816.0290258,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.12",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997297.720612,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.7824185,
-                            "chassisId": "4438.392f.ce22",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf03",
-                            "lastChangeTime": 1605998815.950659,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.13",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997311.8244686,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet1": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001626.4517453,
-                            "chassisId": "4438.3990.61ba",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf01",
-                            "lastChangeTime": 1605998816.2453048,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.11",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605996628.0185862,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001622.752437,
-                            "chassisId": "5254.0054.acad",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "exit01",
-                            "lastChangeTime": 1605998859.0388901,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.101",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605996629.6534827,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet4": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001627.3295956,
-                            "chassisId": "4438.3993.f18c",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf04",
-                            "lastChangeTime": 1605998826.315455,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.14",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997943.0531948,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001623.0541036,
-                            "chassisId": "5254.00b7.3e23",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "exit02",
-                            "lastChangeTime": 1605999463.021545,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet1\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.102",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605999328.0733197,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435549,
-        "cmd": "show lldp neighbors detail",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf03",
-        "address": "192.168.121.88",
-        "data": {
-            "lldpNeighbors": {
-                "Management1": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet2": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001634.7973275,
-                            "chassisId": "5254.00ee.6474",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine02",
-                            "lastChangeTime": 1605998814.7070966,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.22",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997312.9066887,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001628.3988562,
-                            "chassisId": "4438.3993.f18c",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf04",
-                            "lastChangeTime": 1605998829.3979738,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndEnabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 1000012,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.14",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997944.1318834,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet1": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001606.9293108,
-                            "chassisId": "4439.399f.5cd3",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "spine01",
-                            "lastChangeTime": 1605998815.9113436,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet3\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 0,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.21",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997312.9091644,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": []
-                },
-                "Ethernet4": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001628.3963506,
-                            "chassisId": "4438.3993.f18c",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "leaf04",
-                            "lastChangeTime": 1605998829.3914952,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndEnabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 1000012,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.14",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605997944.1356132,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet5": {
-                    "lldpNeighborInfo": []
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435733,
+        "timestamp": 1610377086527,
         "cmd": "show lldp neighbors detail",
         "devtype": "eos",
         "namespace": "eos",
         "hostname": "exit01",
-        "address": "192.168.121.104",
+        "address": "10.255.2.251",
         "data": {
             "lldpNeighbors": {
                 "Management1": {
@@ -1657,20 +221,20 @@
                 "Ethernet2": {
                     "lldpNeighborInfo": [
                         {
-                            "lastContactTime": 1606001634.2354655,
-                            "chassisId": "5254.00ee.6474",
+                            "lastContactTime": 1610348264.6806333,
+                            "chassisId": "4438.39fa.7846",
                             "systemCapabilities": {
                                 "bridge": true,
                                 "router": true
                             },
                             "systemName": "spine02",
-                            "lastChangeTime": 1605998815.3486996,
+                            "lastChangeTime": 1609561081.4205263,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
                                 "unknownTlvs": [],
                                 "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet6\"",
+                                "interfaceId": "\"Ethernet5\"",
                                 "autoNegAdvertisedCapabilities": [],
                                 "protocolIdentityInfo": [],
                                 "portAndProtocolVlanSupported": {},
@@ -1690,69 +254,31 @@
                                     "addressType": "ipv4"
                                 }
                             ],
-                            "neighborDiscoveryTime": 1605996788.2935178,
+                            "neighborDiscoveryTime": 1609561081.4205263,
                             "chassisIdType": "macAddress"
                         }
                     ]
                 },
                 "Ethernet3": {
-                    "lldpNeighborInfo": [
-                        {
-                            "lastContactTime": 1606001623.2560053,
-                            "chassisId": "5254.0054.acad",
-                            "systemCapabilities": {
-                                "bridge": true,
-                                "router": true
-                            },
-                            "systemName": "exit01",
-                            "lastChangeTime": 1605998860.7988012,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet4\"",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "vlanNames": {},
-                                "maxFrameSize": 9236,
-                                "portVlanId": 1,
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 5000000,
-                                    "address": "10.0.0.101",
-                                    "addressType": "ipv4"
-                                }
-                            ],
-                            "neighborDiscoveryTime": 1605995563.0378878,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
+                    "lldpNeighborInfo": []
                 },
                 "Ethernet1": {
                     "lldpNeighborInfo": [
                         {
-                            "lastContactTime": 1606001605.770957,
-                            "chassisId": "4439.399f.5cd3",
+                            "lastContactTime": 1610348282.5893607,
+                            "chassisId": "4438.39ba.d234",
                             "systemCapabilities": {
                                 "bridge": true,
                                 "router": true
                             },
                             "systemName": "spine01",
-                            "lastChangeTime": 1605998815.7514527,
+                            "lastChangeTime": 1609561068.439211,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
                                 "unknownTlvs": [],
                                 "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"Ethernet6\"",
+                                "interfaceId": "\"Ethernet5\"",
                                 "autoNegAdvertisedCapabilities": [],
                                 "protocolIdentityInfo": [],
                                 "portAndProtocolVlanSupported": {},
@@ -1772,74 +298,7 @@
                                     "addressType": "ipv4"
                                 }
                             ],
-                            "neighborDiscoveryTime": 1605996629.007226,
-                            "chassisIdType": "macAddress"
-                        }
-                    ]
-                },
-                "Ethernet6": {
-                    "lldpNeighborInfo": [
-                        {
-                            "systemCapabilities": {
-                                "bridge": false,
-                                "router": true
-                            },
-                            "lastChangeTime": 1605998878.519368,
-                            "neighborInterfaceInfo": {
-                                "portAndProtocolVlanEnabled": {},
-                                "linkAggregationStatus": "capableAndDisabled",
-                                "unknownTlvs": [],
-                                "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"swp1\"",
-                                "interfaceDescription": "swp1",
-                                "autoNegCapability": "notCapable",
-                                "autoNegAdvertisedCapabilities": [],
-                                "protocolIdentityInfo": [],
-                                "portAndProtocolVlanSupported": {},
-                                "operMauType": "1000BASE-T (full-duplex)",
-                                "medInfo": {
-                                    "serialNumberTlvInfo": "Not Specified",
-                                    "softwareRevisionTlvInfo": "3.7.9",
-                                    "modelNameTlvInfo": "Standard PC (i440FX + PIIX, 1996",
-                                    "networkPolicies": [],
-                                    "firmwareRevisionTlvInfo": "1.10.2-1ubuntu1",
-                                    "capabilities": {
-                                        "deviceType": "networkConnectivity",
-                                        "networkPolicy": true,
-                                        "inventory": true,
-                                        "capabilities": true,
-                                        "extendedPd": true,
-                                        "extendedPse": true,
-                                        "location": true
-                                    },
-                                    "manufacturerNameTlvInfo": "QEMU"
-                                },
-                                "vlanNames": {},
-                                "linkAggregationInterfaceId": 0,
-                                "unknownOrgDefinedTlvs": []
-                            },
-                            "neighborDiscoveryTime": 1605998878.519368,
-                            "lastContactTime": 1606001608.6980872,
-                            "chassisId": "5254.00b1.16c6",
-                            "systemName": "internet",
-                            "systemDescription": "Cumulus Linux version 3.7.9 running on QEMU Standard PC (i440FX + PIIX, 1996)",
-                            "ttl": 120,
-                            "managementAddresses": [
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 1,
-                                    "address": "10.0.0.253",
-                                    "addressType": "ipv4"
-                                },
-                                {
-                                    "oidString": "",
-                                    "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 2,
-                                    "address": "fe80::5054:ff:feb1:16c6",
-                                    "addressType": "ipv6"
-                                }
-                            ],
+                            "neighborDiscoveryTime": 1609561068.439211,
                             "chassisIdType": "macAddress"
                         }
                     ]
@@ -1847,14 +306,899 @@
                 "Ethernet4": {
                     "lldpNeighborInfo": [
                         {
-                            "lastContactTime": 1606001623.2578716,
-                            "chassisId": "5254.0054.acad",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "lastChangeTime": 1609561074.8091214,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "local",
+                                "interfaceId": "\"516\"",
+                                "interfaceDescription": "xe-0/0/0",
+                                "autoNegCapability": "notCapable",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "operMauType": "Unknown",
+                                "vlanNames": {},
+                                "maxFrameSize": 1514,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": [
+                                    {
+                                        "ouiStr": "00-90-69",
+                                        "subType": 1,
+                                        "tlvLines": [
+                                            "56 4d 35 45 32 35 36 37 42 35 31 34"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "neighborDiscoveryTime": 1609561074.8091214,
+                            "lastContactTime": 1610348268.678407,
+                            "chassisId": "0205.8671.d000",
+                            "systemName": "dcedge01",
+                            "systemDescription": "Juniper Networks, Inc. vqfx-10000 Ethernet Switch, kernel JUNOS 19.4R1.10, Build date: 2019-12-19 03:14:17 UTC Copyright (c) 1996-2019 Juniper Networks, Inc.",
+                            "ttl": 120,
+                            "managementAddresses": [],
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086556,
+        "cmd": "show lldp neighbors detail",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf04",
+        "address": "10.255.2.188",
+        "data": {
+            "lldpNeighbors": {
+                "Management1": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet2": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348259.4950035,
+                            "chassisId": "4438.39fa.7846",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine02",
+                            "lastChangeTime": 1609561165.072321,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet4\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.22",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561165.072321,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet3": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet1": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348259.83703,
+                            "chassisId": "4438.39ba.d234",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine01",
+                            "lastChangeTime": 1609561165.0896518,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet4\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.21",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561165.0896518,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet6": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348278.2156327,
+                            "chassisId": "4438.3924.3f16",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf03",
+                            "lastChangeTime": 1609561077.5774353,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet6\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.13",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561073.651433,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet4": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet5": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348278.2135131,
+                            "chassisId": "4438.3924.3f16",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf03",
+                            "lastChangeTime": 1609561077.7414901,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet5\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.13",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561073.6494217,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086565,
+        "cmd": "show lldp neighbors detail",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf02",
+        "address": "10.255.2.191",
+        "data": {
+            "lldpNeighbors": {
+                "Management1": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet2": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348262.0089788,
+                            "chassisId": "4438.39fa.7846",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine02",
+                            "lastChangeTime": 1609561167.578457,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.22",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561167.578457,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet3": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet1": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348266.4472523,
+                            "chassisId": "4438.39ba.d234",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine01",
+                            "lastChangeTime": 1609561167.645418,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.21",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561167.645418,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet6": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348280.3557363,
+                            "chassisId": "4438.39e3.192e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf01",
+                            "lastChangeTime": 1609561081.0152788,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet6\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.11",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561077.0675828,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet4": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet5": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348280.3531697,
+                            "chassisId": "4438.39e3.192e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf01",
+                            "lastChangeTime": 1609561081.0075202,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet5\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.11",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561077.0433674,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086573,
+        "cmd": "show lldp neighbors detail",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine02",
+        "address": "10.255.2.119",
+        "data": {
+            "lldpNeighbors": {
+                "Management1": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet2": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348262.7365994,
+                            "chassisId": "4438.3999.c79e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf02",
+                            "lastChangeTime": 1609561167.6227345,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.12",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561167.6227345,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet3": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348257.4929378,
+                            "chassisId": "4438.3924.3f16",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf03",
+                            "lastChangeTime": 1609561157.7409298,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.13",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561157.7409298,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet1": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348284.5257375,
+                            "chassisId": "4438.39e3.192e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf01",
+                            "lastChangeTime": 1609561162.5113785,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.11",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561162.5113785,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet6": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348276.9904752,
+                            "chassisId": "4438.39c3.55cb",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "exit02",
+                            "lastChangeTime": 1609561082.092686,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.32",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561082.092686,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet4": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348255.589992,
+                            "chassisId": "4438.3981.3022",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf04",
+                            "lastChangeTime": 1609561163.592866,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.14",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561163.592866,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet5": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348276.2324123,
+                            "chassisId": "4438.3933.d843",
                             "systemCapabilities": {
                                 "bridge": true,
                                 "router": true
                             },
                             "systemName": "exit01",
-                            "lastChangeTime": 1605998871.4481757,
+                            "lastChangeTime": 1609561080.7652383,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet2\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.31",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561080.7652383,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086565,
+        "cmd": "show lldp neighbors detail",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf01",
+        "address": "10.255.2.189",
+        "data": {
+            "lldpNeighbors": {
+                "Management1": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet2": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348285.0424807,
+                            "chassisId": "4438.39fa.7846",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine02",
+                            "lastChangeTime": 1609561163.7031908,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.22",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561163.7031908,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet3": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet1": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348285.0326478,
+                            "chassisId": "4438.39ba.d234",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine01",
+                            "lastChangeTime": 1609561163.7105892,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.21",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561163.7105892,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet6": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348257.1202846,
+                            "chassisId": "4438.3999.c79e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf02",
+                            "lastChangeTime": 1609561081.4853168,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet6\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.12",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561080.1372447,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet4": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet5": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348257.1178434,
+                            "chassisId": "4438.3999.c79e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf02",
+                            "lastChangeTime": 1609561081.47067,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet5\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.12",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561080.1362412,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086660,
+        "cmd": "show lldp neighbors detail",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf03",
+        "address": "10.255.2.190",
+        "data": {
+            "lldpNeighbors": {
+                "Management1": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet2": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348281.7769246,
+                            "chassisId": "4438.39fa.7846",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine02",
+                            "lastChangeTime": 1609561158.9850357,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
@@ -1866,7 +1210,7 @@
                                 "portAndProtocolVlanSupported": {},
                                 "vlanNames": {},
                                 "maxFrameSize": 9236,
-                                "portVlanId": 1,
+                                "portVlanId": 0,
                                 "linkAggregationInterfaceId": 0,
                                 "unknownOrgDefinedTlvs": []
                             },
@@ -1876,11 +1220,362 @@
                                     "oidString": "",
                                     "interfaceNumType": "ifIndex",
                                     "interfaceNum": 5000000,
-                                    "address": "10.0.0.101",
+                                    "address": "10.0.0.22",
                                     "addressType": "ipv4"
                                 }
                             ],
-                            "neighborDiscoveryTime": 1605995563.0268161,
+                            "neighborDiscoveryTime": 1609561158.9850357,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet3": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet1": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348258.837771,
+                            "chassisId": "4438.39ba.d234",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "spine01",
+                            "lastChangeTime": 1610329926.6276717,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet3\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.21",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1610329926.6276717,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet6": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348280.9774456,
+                            "chassisId": "4438.3981.3022",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf04",
+                            "lastChangeTime": 1609561076.2190857,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet6\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.14",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561074.8239148,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet4": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet5": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348280.97623,
+                            "chassisId": "4438.3981.3022",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf04",
+                            "lastChangeTime": 1609561076.218885,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndEnabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet5\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 1,
+                                "linkAggregationInterfaceId": 1000001,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.14",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561074.8231957,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086717,
+        "cmd": "show lldp neighbors detail",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine01",
+        "address": "10.255.2.120",
+        "data": {
+            "lldpNeighbors": {
+                "Management1": {
+                    "lldpNeighborInfo": []
+                },
+                "Ethernet2": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348263.0238888,
+                            "chassisId": "4438.3999.c79e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf02",
+                            "lastChangeTime": 1609561167.9092343,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.12",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561167.9092343,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet3": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348256.1721654,
+                            "chassisId": "4438.3924.3f16",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf03",
+                            "lastChangeTime": 1610329925.9845178,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.13",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1610329925.9845178,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet1": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348284.8131425,
+                            "chassisId": "4438.39e3.192e",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf01",
+                            "lastChangeTime": 1609561162.7985795,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.11",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561162.7985795,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet6": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348277.2797015,
+                            "chassisId": "4438.39c3.55cb",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "exit02",
+                            "lastChangeTime": 1609561069.2003534,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.32",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561069.2003534,
+                            "chassisIdType": "macAddress"
+                        }
+                    ]
+                },
+                "Ethernet4": {
+                    "lldpNeighborInfo": [
+                        {
+                            "lastContactTime": 1610348255.877538,
+                            "chassisId": "4438.3981.3022",
+                            "systemCapabilities": {
+                                "bridge": true,
+                                "router": true
+                            },
+                            "systemName": "leaf04",
+                            "lastChangeTime": 1609561163.8790312,
+                            "neighborInterfaceInfo": {
+                                "portAndProtocolVlanEnabled": {},
+                                "linkAggregationStatus": "capableAndDisabled",
+                                "unknownTlvs": [],
+                                "interfaceIdType": "interfaceName",
+                                "interfaceId": "\"Ethernet1\"",
+                                "autoNegAdvertisedCapabilities": [],
+                                "protocolIdentityInfo": [],
+                                "portAndProtocolVlanSupported": {},
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
+                                "linkAggregationInterfaceId": 0,
+                                "unknownOrgDefinedTlvs": []
+                            },
+                            "ttl": 120,
+                            "managementAddresses": [
+                                {
+                                    "oidString": "",
+                                    "interfaceNumType": "ifIndex",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.14",
+                                    "addressType": "ipv4"
+                                }
+                            ],
+                            "neighborDiscoveryTime": 1609561163.8790312,
                             "chassisIdType": "macAddress"
                         }
                     ]
@@ -1888,52 +1583,57 @@
                 "Ethernet5": {
                     "lldpNeighborInfo": [
                         {
+                            "lastContactTime": 1610348276.5201194,
+                            "chassisId": "4438.3933.d843",
                             "systemCapabilities": {
-                                "bridge": false,
-                                "wlanAccessPoint": false,
-                                "router": true,
-                                "stationOnly": true
+                                "bridge": true,
+                                "router": true
                             },
-                            "lastChangeTime": 1605998878.7651315,
+                            "systemName": "exit01",
+                            "lastChangeTime": 1609561067.6865244,
                             "neighborInterfaceInfo": {
                                 "portAndProtocolVlanEnabled": {},
                                 "linkAggregationStatus": "capableAndDisabled",
                                 "unknownTlvs": [],
                                 "interfaceIdType": "interfaceName",
-                                "interfaceId": "\"eth1\"",
-                                "interfaceDescription": "eth1",
-                                "autoNegCapability": "notCapable",
+                                "interfaceId": "\"Ethernet1\"",
                                 "autoNegAdvertisedCapabilities": [],
                                 "protocolIdentityInfo": [],
                                 "portAndProtocolVlanSupported": {},
-                                "operMauType": "Unknown",
-                                "vlanNames": {
-                                    "4": "eth1.4",
-                                    "2": "eth1.2"
-                                },
+                                "vlanNames": {},
+                                "maxFrameSize": 9236,
+                                "portVlanId": 0,
                                 "linkAggregationInterfaceId": 0,
                                 "unknownOrgDefinedTlvs": []
                             },
-                            "neighborDiscoveryTime": 1605998878.7651315,
-                            "lastContactTime": 1606001608.8068984,
-                            "chassisId": "5254.007b.04d2",
-                            "systemName": "edge01",
-                            "systemDescription": "Ubuntu 16.04.6 LTS Linux 4.4.0-169-generic #198-Ubuntu SMP Tue Nov 12 10:38:00 UTC 2019 x86_64",
                             "ttl": 120,
                             "managementAddresses": [
                                 {
                                     "oidString": "",
                                     "interfaceNumType": "ifIndex",
-                                    "interfaceNum": 1,
-                                    "address": "10.0.0.100",
+                                    "interfaceNum": 5000000,
+                                    "address": "10.0.0.31",
                                     "addressType": "ipv4"
                                 }
                             ],
+                            "neighborDiscoveryTime": 1609561067.6865244,
                             "chassisIdType": "macAddress"
                         }
                     ]
                 }
             }
         }
+    }
+][
+    {
+        "status": 0,
+        "timestamp": 1610377089202,
+        "cmd": "show lldp neighbors detail | display json",
+        "devtype": "junos-qfx",
+        "namespace": "eos",
+        "hostname": "dcedge01",
+        "address": "10.255.2.250",
+        "version": 0,
+        "data": "{\n    \"lldp-neighbors-information\" : [\n    {\n        \"attributes\" : {\"xmlns\" : \"http://xml.juniper.net/junos/19.4R0/lldp-mtx\", \n                        \"junos:style\" : \"detail\"\n                       }, \n        \"lldp-neighbor-information\" : [\n        {\n            \"lldp-index\" : [\n            {\n                \"data\" : \"3\"\n            }\n            ], \n            \"lldp-ttl\" : [\n            {\n                \"data\" : \"120\"\n            }\n            ], \n            \"lldp-timemark\" : [\n            {\n                \"data\" : \"Mon Jan 11 06:57:56 2021\"\n            }\n            ], \n            \"lldp-age\" : [\n            {\n                \"data\" : \"11\"\n            }\n            ], \n            \"lldp-local-interface\" : [\n            {\n                \"data\" : \"xe-0/0/0\"\n            }\n            ], \n            \"lldp-local-parent-interface-name\" : [\n            {\n                \"data\" : \"-\"\n            }\n            ], \n            \"lldp-local-port-id\" : [\n            {\n                \"data\" : \"516\"\n            }\n            ], \n            \"lldp-local-port-ageout-count\" : [\n            {\n                \"data\" : \"1\"\n            }\n            ], \n            \"lldp-remote-chassis-id-subtype\" : [\n            {\n                \"data\" : \"Mac address\"\n            }\n            ], \n            \"lldp-remote-chassis-id\" : [\n            {\n                \"data\" : \"44:38:39:33:d8:43\"\n            }\n            ], \n            \"lldp-remote-port-id-subtype\" : [\n            {\n                \"data\" : \"Interface name\"\n            }\n            ], \n            \"lldp-remote-port-id\" : [\n            {\n                \"data\" : \"Ethernet4\"\n            }\n            ], \n            \"lldp-remote-system-name\" : [\n            {\n                \"data\" : \"exit01\"\n            }\n            ], \n            \"lldp-remote-system-capabilities-supported\" : [\n            {\n                \"data\" : \"Bridge Router \"\n            }\n            ], \n            \"lldp-remote-system-capabilities-enabled\" : [\n            {\n                \"data\" : \"Bridge Router \"\n            }\n            ], \n            \"lldp-remote-management-address-type\" : [\n            {\n                \"data\" : \"IPv4(1)\"\n            }\n            ], \n            \"lldp-remote-management-address\" : [\n            {\n                \"data\" : \"10.0.0.31\"\n            }\n            ], \n            \"lldp-remote-management-address-port-id\" : [\n            {\n                \"data\" : \"5000000\"\n            }\n            ], \n            \"lldp-remote-management-address-interface-subtype\" : [\n            {\n                \"data\" : \"ifIndex(2)\"\n            }\n            ], \n            \"lldp-remote-management-addr-oid\" : [\n            {\n            }\n            ], \n            \"lldp-org-specific-tlv\" : [\n            {\n                \"lldp-remote-oui-802-1\" : [\n                {\n                    \"data\" : \"0080c2\"\n                }\n                ], \n                \"lldp-remote-subtype-port-vid\" : [\n                {\n                    \"data\" : \"1\"\n                }\n                ], \n                \"lldp-remote-subtype-vlan-id\" : [\n                {\n                    \"data\" : \"0\"\n                }\n                ], \n                \"lldp-remote-index\" : [\n                {\n                    \"data\" : \"1\"\n                }\n                ]\n            }, \n            {\n                \"lldp-remote-oui-802-3\" : [\n                {\n                    \"data\" : \"00120f\"\n                }\n                ], \n                \"lldp-remote-subtype-lag\" : [\n                {\n                    \"data\" : \"3\"\n                }\n                ], \n                \"lldp-remote-subtype-lag-status\" : [\n                {\n                    \"data\" : \"supported, disabled (0x1)\"\n                }\n                ], \n                \"lldp-remote-subtype-lag-portid\" : [\n                {\n                    \"data\" : \"0\"\n                }\n                ], \n                \"lldp-remote-index\" : [\n                {\n                    \"data\" : \"2\"\n                }\n                ]\n            }, \n            {\n                \"lldp-remote-oui-802-3\" : [\n                {\n                    \"data\" : \"00120f\"\n                }\n                ], \n                \"lldp-remote-subtype-mtu\" : [\n                {\n                    \"data\" : \"4\"\n                }\n                ], \n                \"lldp-remote-subtype-mtu-size\" : [\n                {\n                    \"data\" : \"9236\"\n                }\n                ], \n                \"lldp-remote-index\" : [\n                {\n                    \"data\" : \"3\"\n                }\n                ]\n            }\n            ]\n        }, \n        {\n            \"lldp-index\" : [\n            {\n                \"data\" : \"4\"\n            }\n            ], \n            \"lldp-ttl\" : [\n            {\n                \"data\" : \"120\"\n            }\n            ], \n            \"lldp-timemark\" : [\n            {\n                \"data\" : \"Mon Jan 11 06:57:57 2021\"\n            }\n            ], \n            \"lldp-age\" : [\n            {\n                \"data\" : \"10\"\n            }\n            ], \n            \"lldp-local-interface\" : [\n            {\n                \"data\" : \"xe-0/0/1\"\n            }\n            ], \n            \"lldp-local-parent-interface-name\" : [\n            {\n                \"data\" : \"-\"\n            }\n            ], \n            \"lldp-local-port-id\" : [\n            {\n                \"data\" : \"517\"\n            }\n            ], \n            \"lldp-local-port-ageout-count\" : [\n            {\n                \"data\" : \"1\"\n            }\n            ], \n            \"lldp-remote-chassis-id-subtype\" : [\n            {\n                \"data\" : \"Mac address\"\n            }\n            ], \n            \"lldp-remote-chassis-id\" : [\n            {\n                \"data\" : \"44:38:39:c3:55:cb\"\n            }\n            ], \n            \"lldp-remote-port-id-subtype\" : [\n            {\n                \"data\" : \"Interface name\"\n            }\n            ], \n            \"lldp-remote-port-id\" : [\n            {\n                \"data\" : \"Ethernet4\"\n            }\n            ], \n            \"lldp-remote-system-name\" : [\n            {\n                \"data\" : \"exit02\"\n            }\n            ], \n            \"lldp-remote-system-capabilities-supported\" : [\n            {\n                \"data\" : \"Bridge Router \"\n            }\n            ], \n            \"lldp-remote-system-capabilities-enabled\" : [\n            {\n                \"data\" : \"Bridge Router \"\n            }\n            ], \n            \"lldp-remote-management-address-type\" : [\n            {\n                \"data\" : \"IPv4(1)\"\n            }\n            ], \n            \"lldp-remote-management-address\" : [\n            {\n                \"data\" : \"10.0.0.32\"\n            }\n            ], \n            \"lldp-remote-management-address-port-id\" : [\n            {\n                \"data\" : \"5000000\"\n            }\n            ], \n            \"lldp-remote-management-address-interface-subtype\" : [\n            {\n                \"data\" : \"ifIndex(2)\"\n            }\n            ], \n            \"lldp-remote-management-addr-oid\" : [\n            {\n            }\n            ], \n            \"lldp-org-specific-tlv\" : [\n            {\n                \"lldp-remote-oui-802-1\" : [\n                {\n                    \"data\" : \"0080c2\"\n                }\n                ], \n                \"lldp-remote-subtype-port-vid\" : [\n                {\n                    \"data\" : \"1\"\n                }\n                ], \n                \"lldp-remote-subtype-vlan-id\" : [\n                {\n                    \"data\" : \"0\"\n                }\n                ], \n                \"lldp-remote-index\" : [\n                {\n                    \"data\" : \"1\"\n                }\n                ]\n            }, \n            {\n                \"lldp-remote-oui-802-3\" : [\n                {\n                    \"data\" : \"00120f\"\n                }\n                ], \n                \"lldp-remote-subtype-lag\" : [\n                {\n                    \"data\" : \"3\"\n                }\n                ], \n                \"lldp-remote-subtype-lag-status\" : [\n                {\n                    \"data\" : \"supported, disabled (0x1)\"\n                }\n                ], \n                \"lldp-remote-subtype-lag-portid\" : [\n                {\n                    \"data\" : \"0\"\n                }\n                ], \n                \"lldp-remote-index\" : [\n                {\n                    \"data\" : \"2\"\n                }\n                ]\n            }, \n            {\n                \"lldp-remote-oui-802-3\" : [\n                {\n                    \"data\" : \"00120f\"\n                }\n                ], \n                \"lldp-remote-subtype-mtu\" : [\n                {\n                    \"data\" : \"4\"\n                }\n                ], \n                \"lldp-remote-subtype-mtu-size\" : [\n                {\n                    \"data\" : \"9236\"\n                }\n                ], \n                \"lldp-remote-index\" : [\n                {\n                    \"data\" : \"3\"\n                }\n                ]\n            }\n            ]\n        }\n        ]\n    }\n    ]\n}\n"
     }
 ]

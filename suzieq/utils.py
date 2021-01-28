@@ -8,6 +8,7 @@ import yaml
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
 from tzlocal import get_localzone
+from pytz import all_timezones
 
 import pandas as pd
 import pyarrow as pa
@@ -16,13 +17,15 @@ import pyarrow as pa
 logger = logging.getLogger(__name__)
 
 
-def validate_sq_config(cfg, fh):
+MAX_MTU = 9216
+
+
+def validate_sq_config(cfg):
     """Validate Suzieq config file
 
     Parameters:
     -----------
     cfg: yaml object, YAML encoding of the config file
-    fh:  file logger handle
 
     Returns:
     --------
@@ -50,6 +53,18 @@ def validate_sq_config(cfg, fh):
     if not p.is_dir():
         return "Invalid schema directory specified"
 
+    # Verify timezone if present is valid
+    def_tz = get_localzone().zone
+    reader = cfg.get('analyzer', {})
+    if reader and isinstance(reader, dict):
+        usertz = reader.get('timezone', '')
+        if usertz and usertz not in all_timezones:
+            return f'Invalid timezone: {usertz}'
+        elif not usertz:
+            reader['timezone'] = def_tz
+    else:
+        cfg['analyzer'] = {'timezone': def_tz}
+
     return None
 
 
@@ -75,12 +90,16 @@ def load_sq_config(validate=True, config_file=None):
             cfg = yaml.safe_load(f.read())
 
         if validate:
-            validate_sq_config(cfg, sys.stderr)
+            error_str = validate_sq_config(cfg)
+            if error_str:
+                print(f'ERROR: Invalid config file: {config_file}')
+                print(error_str)
+                sys.exit(1)
 
     if not cfg:
         print(f"suzieq requires a configuration file either in ./suzieq-cfg.yml "
               "or ~/suzieq/suzieq-cfg.yml")
-        exit(1)
+        sys.exit(1)
 
     return cfg
 
@@ -546,10 +565,31 @@ def known_devtypes() -> list:
             'nxos', 'sonic'])
 
 
-def humanize_timestamp(field: pd.Series) -> pd.Series:
+def humanize_timestamp(field: pd.Series, tz=None) -> pd.Series:
     '''Convert the UTC timestamp in Dataframe to local time.
     Use of pd.to_datetime will not work as it converts the timestamp
     to UTC. If the timestamp is already in UTC format, we get busted time.
     '''
-    return field.apply(lambda x: datetime.fromtimestamp((int(x)/1000))) \
-                .dt.tz_localize('UTC').dt.tz_convert(get_localzone().zone)
+    tz = tz or get_localzone().zone
+    return field.apply(lambda x: datetime.utcfromtimestamp((int(x)/1000))) \
+                .dt.tz_localize('UTC').dt.tz_convert(tz)
+
+
+def expand_nxos_ifname(ifname: str) -> str:
+    '''Expand shortned ifnames in NXOS to their full values, if required'''
+    if ifname.startswith('Eth') and 'Ether' not in ifname:
+        return ifname.replace('Eth', 'Ethernet')
+    elif ifname.startswith('Po') and 'port' not in ifname:
+        return ifname.replace('Po', 'port-channel')
+    return ifname
+
+
+def expand_eos_ifname(ifname: str) -> str:
+    '''Expand shortned ifnames in EOS to their full values, if required'''
+    if ifname.startswith('Eth') and 'Ether' not in ifname:
+        return ifname.replace('Eth', 'Ethernet')
+    elif ifname.startswith('Po') and 'Port' not in ifname:
+        return ifname.replace('Po', 'Port-Channel')
+    elif ifname.startswith('Vx') and 'Vxlan' not in ifname:
+        return ifname.replace('Vx', 'Vxlan')
+    return ifname

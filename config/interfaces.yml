@@ -36,7 +36,7 @@ apply:
         "vlanToVniMap/*:vlan?|0",
         "vlanToVniMap/*/vni: vni?|0",
         "lineProtocolStatus: state",
-        "interfaceStatus: adminState?up|down",
+        "interfaceStatus: adminState",
         "hardware: type",
         "forwardingModel: forwardingModel",
         "linkStatusChanges: numChanges?|0",
@@ -89,6 +89,8 @@ apply:
         "logical-interface/[*]/name/[0]/data: logicalIfname",
         "logical-interface/[*]/if-config-flags: logicalIfflags",
         "logical-interface/[*]/address-family: afi",
+        "logical-interface/[*]/logical-interface-vgw-v4-mac/[0]/data: _gwMacaddr?|",
+        "logical-interface/[*]/logical-interface-mac/[0]/data: _gwMacaddr?|_gwMacaddr",
         ]'
 
       - command: show configuration routing-instances | display json
@@ -148,11 +150,9 @@ apply:
         "linklocal-addr: _linklocal"
         ]'
 
-      - command: show interface mac-address  | json
-        normalize: 'TABLE_interface/ROW_interface/*?/[
-        "interface: ifname",
-        "address: macaddr",
-        ]'
+      - command: show interface ethernet regex [1-32]/*|egrep '^Eth|Hardware|MTU'
+        textfsm: textfsm_templates/nxos_show_int_grep.tfsm
+        _entryType: mtumac
 
       - command: show fabric forwarding internal svi-info
         textfsm: textfsm_templates/nxos_if_fabric.tfsm

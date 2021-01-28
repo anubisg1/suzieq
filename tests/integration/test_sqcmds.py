@@ -284,7 +284,9 @@ def assert_df_equal(expected_df, got_df, ignore_cols) -> None:
                                 inplace=True)
         got_df.sort_values(by=got_df.columns.tolist(), inplace=True)
     except Exception:
-        pass
+        if 'namespace' in expected_df.columns and 'timestamp' in expected_df.columns:
+            expected_df = expected_df.sort_values(by=['namespace', 'hostname', 'timestamp']).reset_index(drop=True)
+            got_df = got_df.sort_values(by=['namespace', 'hostname', 'timestamp']).reset_index(drop=True)
 
     try:
         rslt_df = expected_df.compare(got_df, keep_equal=True)
@@ -336,7 +338,11 @@ def _test_sqcmds(testvar, context_config):
         ignore_cols = []
 
     if 'output' in testvar:
-        expected_df = pd.read_json(testvar['output'].strip())
+        # pandas uses ujson and needs to escape "/" in any string its trying
+        # to decode. This is true in the case of NXOS' LLDP description which
+        # contains a URL causing read_json to abort with weird error messages.
+        expected_df = pd.read_json(
+            testvar['output'].strip().replace('/', '\/'))
 
         try:
             got_df = pd.read_json(output.decode('utf8').strip())

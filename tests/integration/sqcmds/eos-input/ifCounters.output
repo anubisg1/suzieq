@@ -1,1040 +1,1002 @@
 [
     {
         "status": 0,
-        "timestamp": 1606030435467,
+        "timestamp": 1610377086242,
         "cmd": "cat /proc/net/dev",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server101",
-        "address": "192.168.121.82",
-        "version": "16.04",
-        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:   19344     240    0    0    0     0          0         0    19344     240    0    0    0     0       0          0\n  eth2:  513291    4217    0    0    0     0          0      4212    11716      95    0    0    0     0       0          0\n bond0:  864123    7070    0 1555    0     0          0      7054    24608     202    0    0    0     0       0          0\n  eth1:  350832    2853    0    0    0     0          0      2842    12892     107    0    0    0     0       0          0\n  eth0: 3025023    3479 2088    0    0  2088          0         0   323686    2318    0    0    0     0       0          0\n"
+        "hostname": "server302",
+        "address": "10.255.2.97",
+        "version": "18.04",
+        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n bond0: 246769519 2017830    4 393279    0     4          0         0  6286340   50853    0    0    0     0       0          0\n  eth0: 24552800  398878 395847 393718    0 395847          0         0   575502    4482    0    0    0     0       0          0\n    lo:   14924     152    0    0    0     0          0         0    14924     152    0    0    0     0       0          0\n  eth1: 146790119 1205606    1    1    0     1          0         0  3148392   25505    0    0    0     0       0          0\n  eth2: 99979400  812224    3    1    0     3          0         0  3137948   25348    0    0    0     0       0          0\n"
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435494,
+        "timestamp": 1610377086260,
         "cmd": "cat /proc/net/dev",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server103",
-        "address": "192.168.121.121",
-        "version": "16.04",
-        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:   20656     256    0    0    0     0          0         0    20656     256    0    0    0     0       0          0\n  eth2:  349988    2844    0    0    0     0          0      2841    11912      97    0    0    0     0       0          0\n bond0:  863875    7068    0 1555    0     0          0      7051    24608     202    0    0    0     0       0          0\n  eth1:  513887    4224    0    0    0     0          0      4210    12696     105    0    0    0     0       0          0\n  eth0: 3024638    3487 2083    0    0  2083          0         0   325333    2332    0    0    0     0       0          0\n"
+        "hostname": "server301",
+        "address": "10.255.2.140",
+        "version": "18.04",
+        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n bond0: 246768256 2017817    4 393274    0     4          0         0  6285656   50844    0    1    0     0       0          0\n  eth2: 99980940  812248    3    0    0     3          0         0  3137250   25349    0    0    0     0       0          0\n    lo:   12418     138    0    0    0     0          0         0    12418     138    0    0    0     0       0          0\n  eth1: 146787316 1205569    1    0    0     1          0         0  3148406   25495    0    0    0     0       0          0\n  eth0: 24502027  398844 395869 393718    0 395869          0         0   567265    4474    0    0    0     0       0          0\n"
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435509,
+        "timestamp": 1610377086284,
+        "cmd": "cat /proc/net/dev",
+        "devtype": "linux",
+        "namespace": "eos",
+        "hostname": "firewall01",
+        "address": "10.255.2.169",
+        "version": "18.04",
+        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\neth2.2: 15722796  255298    0    0    0     0          0         0 18857282  255368    0    0    0     0       0          0\neth1.3: 15848107  256188    0    0    0     0          0         0 18915039  256233    0    0    0     0       0          0\neth2.3: 15851894  256265    0    0    0     0          0         0 18918231  256301    0    0    0     0       0          0\n    lo:   40051     451    0    0    0     0          0         0    40051     451    0    0    0     0       0          0\n  eth1: 58036201  766842 24395    0    0 24395          0         0 57072657  766986    0    0    0     0       0          0\neth1.4: 15723616  255295    0    0    0     0          0         0 18856779  255347    0    0    0     0       0          0\n  eth2: 58036763  766875 24473    0    0 24473          0         0 57074084  767015    0    0    0     0       0          0\neth1.2: 15725540  255349    0    0    0     0          0         0 18859209  255406    0    0    0     0       0          0\neth2.4: 15722673  255302    0    0    0     0          0         0 18855537  255346    0    0    0     0       0          0\n  eth0: 43992291  416193 399127  788    0 399127          0         0  1382495   12503    0    0    0     0       0          0\n"
+    }
+][
+    {
+        "status": 0,
+        "timestamp": 1610377086285,
         "cmd": "cat /proc/net/dev",
         "devtype": "linux",
         "namespace": "eos",
         "hostname": "server102",
-        "address": "192.168.121.26",
-        "version": "16.04",
-        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:   20656     256    0    0    0     0          0         0    20656     256    0    0    0     0       0          0\n  eth2:  513155    4216    0    0    0     0          0      4209    11972      98    0    0    0     0       0          0\n bond0:  864123    7070    0 1555    0     0          0      7052    24608     202    0    0    0     0       0          0\n  eth1:  350968    2854    0    0    0     0          0      2843    12636     104    0    0    0     0       0          0\n  eth0: 3017408    3440 2085    0    0  2085          0         0   325514    2300    0    0    0     0       0          0\n"
+        "address": "10.255.2.130",
+        "version": "18.04",
+        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:   18352     212    0    0    0     0          0         0    18352     212    0    0    0     0       0          0\n  eth1: 100115513  813330    3    0    0     3          0         0  3134276   25303    0    0    0     0       0          0\n  eth0: 24556912  399109 395904 393718    0 395904          0         0   588550    4625    0    0    0     0       0          0\n bond0: 246885366 2018763    6 393340    0     6          0         0  6285014   50830    0    2    0     0       0          0\n  eth2: 146769853 1205433    3    0    0     3          0         0  3150738   25527    0    0    0     0       0          0\n"
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435526,
+        "timestamp": 1610377086336,
         "cmd": "cat /proc/net/dev",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server104",
-        "address": "192.168.121.210",
-        "version": "16.04",
-        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:   20656     256    0    0    0     0          0         0    20656     256    0    0    0     0       0          0\n  eth2:  349864    2843    0    0    0     0          0      2842    11716      95    0    0    0     0       0          0\n bond0:  863751    7067    0 1555    0     0          0      7052    24608     202    0    0    0     0       0          0\n  eth1:  513887    4224    0    0    0     0          0      4210    12892     107    0    0    0     0       0          0\n  eth0: 3028658    3538 2082    0    0  2082          0         0   328316    2342    0    0    0     0       0          0\n"
-    }
-][
-    {
-        "status": 0,
-        "timestamp": 1606030435637,
-        "cmd": "cat /proc/net/dev",
-        "devtype": "linux",
-        "namespace": "eos",
-        "hostname": "edge01",
-        "address": "192.168.121.86",
-        "version": "16.04",
-        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:    9536     116    0    0    0     0          0         0     9536     116    0    0    0     0       0          0\neth1.2:  171435    3277    0    0    0     0          0         0   270314    2903    0    0    0     0       0          0\neth2.4:    7113     121    0    0    0     0          0         0     7742     117    0    0    0     0       0          0\n  eth2:  207959    2983    0    3    0     0          0         0   249879    2508    0    0    0     0       0          0\neth1.4:    8064     154    0    0    0     0          0         0     8842     111    0    0    0     0       0          0\n  eth1:  280233    3779    0  256    0     0          0         0   311170    3105    0    0    0     0       0          0\neth2.2:  133300    2556    0    0    0     0          0         0   212511    2300    0    0    0     0       0          0\n  eth0:  254200    2405    0    4    0     0          0         0   137612    1113    0    0    0     0       0          0\n"
-    }
-][
-    {
-        "status": 0,
-        "timestamp": 1606030435720,
-        "cmd": "cat /proc/net/dev",
-        "devtype": "cumulus",
-        "namespace": "eos",
-        "hostname": "internet",
-        "address": "192.168.121.2",
-        "version": "3.7.9",
-        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n    lo:    5104      58    0    0    0     0          0         0     5104      58    0    0    0     0       0          0\n  swp2:  142656    1749    0    0    0     0          0         0   248203    3226    0    0    0     0       0          0\n  swp1:  181566    2219    0   16    0     0          0         0   284572    3627    0    0    0     0       0          0\n  eth0:  199452    1746    0    0    0     0          0         0    97786     570    0    0    0     0       0          0\n"
+        "hostname": "server101",
+        "address": "10.255.2.240",
+        "version": "18.04",
+        "data": "Inter-|   Receive                                                |  Transmit\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\n  eth0: 24571183  399910 395939 393718    0 395939          0         0   649274    5154    0    0    0     0       0          0\n    lo:   18712     216    0    0    0     0          0         0    18712     216    0    0    0     0       0          0\n  eth1: 100119635  813377    3    0    0     3          0         0  3151722   25549    0    0    0     0       0          0\n  eth2: 146769434 1205427    3    0    0     3          0       115  3138468   25347    0    0    0     0       0          0\n bond0: 246889069 2018804    6 393339    0     6          0       115  6290190   50896    0    1    0     0       0          0\n"
     }
 ][
     {
         "status": 200,
-        "timestamp": 1606030436104,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf02",
-        "address": "192.168.121.22",
-        "data": {
-            "interfaces": {
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 3278,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001634.8412793,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 304051,
-                    "outDiscards": 0,
-                    "outOctets": 530145,
-                    "inUcastPkts": 4048,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Port-Channel1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 5,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001635.033133,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 11712,
-                    "outDiscards": 0,
-                    "outOctets": 528879,
-                    "inUcastPkts": 1,
-                    "outMulticastPkts": 4202,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 10478,
-                    "inMulticastPkts": 906,
-                    "lastUpdateTimestamp": 1606001635.1193306,
-                    "inBroadcastPkts": 2,
-                    "inOctets": 847680,
-                    "outDiscards": 0,
-                    "outOctets": 752153,
-                    "inUcastPkts": 10532,
-                    "outMulticastPkts": 163,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 3,
-                    "outUcastPkts": 9137,
-                    "inMulticastPkts": 169,
-                    "lastUpdateTimestamp": 1606001635.0883257,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 882947,
-                    "outDiscards": 0,
-                    "outOctets": 1062913,
-                    "inUcastPkts": 9144,
-                    "outMulticastPkts": 941,
-                    "inDiscards": 0
-                },
-                "Port-Channel2": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 4,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001635.033174,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 11980,
-                    "outDiscards": 0,
-                    "outOctets": 528739,
-                    "inUcastPkts": 3,
-                    "outMulticastPkts": 4202,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 10440,
-                    "inMulticastPkts": 906,
-                    "lastUpdateTimestamp": 1606001635.0738883,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 845176,
-                    "outDiscards": 0,
-                    "outOctets": 749850,
-                    "inUcastPkts": 10498,
-                    "outMulticastPkts": 164,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 4,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001634.296218,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 12364,
-                    "outDiscards": 0,
-                    "outOctets": 639085,
-                    "inUcastPkts": 3,
-                    "outMulticastPkts": 5105,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 176,
-                    "lastUpdateTimestamp": 1606001634.0343027,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 18400,
-                    "outDiscards": 0,
-                    "outOctets": 283810,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 2334,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 5,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001634.29587,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 12096,
-                    "outDiscards": 0,
-                    "outOctets": 639225,
-                    "inUcastPkts": 1,
-                    "outMulticastPkts": 5105,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436102,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf01",
-        "address": "192.168.121.5",
-        "data": {
-            "interfaces": {
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 3328,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001634.468906,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 388211,
-                    "outDiscards": 0,
-                    "outOctets": 541153,
-                    "inUcastPkts": 4910,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Port-Channel1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 10,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001633.7191331,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 12936,
-                    "outDiscards": 0,
-                    "outOctets": 360964,
-                    "inUcastPkts": 12,
-                    "outMulticastPkts": 2833,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 10518,
-                    "inMulticastPkts": 927,
-                    "lastUpdateTimestamp": 1606001634.5128975,
-                    "inBroadcastPkts": 3,
-                    "inOctets": 848211,
-                    "outDiscards": 0,
-                    "outOctets": 844205,
-                    "inUcastPkts": 10505,
-                    "outMulticastPkts": 892,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 9144,
-                    "inMulticastPkts": 941,
-                    "lastUpdateTimestamp": 1606001634.4811273,
-                    "inBroadcastPkts": 3,
-                    "inOctets": 1062913,
-                    "outDiscards": 0,
-                    "outOctets": 972011,
-                    "inUcastPkts": 9137,
-                    "outMulticastPkts": 901,
-                    "inDiscards": 0
-                },
-                "Port-Channel2": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 11,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001633.7191744,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 12668,
-                    "outDiscards": 0,
-                    "outOctets": 361104,
-                    "inUcastPkts": 10,
-                    "outMulticastPkts": 2833,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 10456,
-                    "inMulticastPkts": 941,
-                    "lastUpdateTimestamp": 1606001634.456976,
-                    "inBroadcastPkts": 2,
-                    "inOctets": 851387,
-                    "outDiscards": 0,
-                    "outOctets": 839962,
-                    "inUcastPkts": 10526,
-                    "outMulticastPkts": 895,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 11,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001633.6737146,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 13052,
-                    "outDiscards": 0,
-                    "outOctets": 560381,
-                    "inUcastPkts": 10,
-                    "outMulticastPkts": 4466,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 2334,
-                    "lastUpdateTimestamp": 1606001633.4273407,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 283810,
-                    "outDiscards": 0,
-                    "outOctets": 107587,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 909,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 10,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001633.6733308,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 13320,
-                    "outDiscards": 0,
-                    "outOctets": 560195,
-                    "inUcastPkts": 12,
-                    "outMulticastPkts": 4466,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436178,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf04",
-        "address": "192.168.121.235",
-        "data": {
-            "interfaces": {
-                "Port-Channel12": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 7374,
-                    "inMulticastPkts": 383,
-                    "lastUpdateTimestamp": 1606001633.2460501,
-                    "inBroadcastPkts": 2,
-                    "inOctets": 696900,
-                    "outDiscards": 0,
-                    "outOctets": 739819,
-                    "inUcastPkts": 7372,
-                    "outMulticastPkts": 383,
-                    "inDiscards": 0
-                },
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 3270,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001634.417776,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 265183,
-                    "outDiscards": 0,
-                    "outOctets": 530525,
-                    "inUcastPkts": 3562,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 14,
-                    "outUcastPkts": 2,
-                    "inMulticastPkts": 676,
-                    "lastUpdateTimestamp": 1606001627.2713766,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 80884,
-                    "outDiscards": 0,
-                    "outOctets": 27391,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 236,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 6,
-                    "outUcastPkts": 10431,
-                    "inMulticastPkts": 130,
-                    "lastUpdateTimestamp": 1606001634.7063801,
-                    "inBroadcastPkts": 8,
-                    "inOctets": 746786,
-                    "outDiscards": 0,
-                    "outOctets": 800601,
-                    "inUcastPkts": 10446,
-                    "outMulticastPkts": 578,
-                    "inDiscards": 0
-                },
-                "Port-Channel1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 1,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001633.2459815,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 11916,
-                    "outDiscards": 0,
-                    "outOctets": 359956,
-                    "inUcastPkts": 2,
-                    "outMulticastPkts": 2832,
-                    "inDiscards": 0
-                },
-                "Port-Channel2": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 1,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001633.2460303,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 11712,
-                    "outDiscards": 0,
-                    "outOctets": 359956,
-                    "inUcastPkts": 1,
-                    "outMulticastPkts": 2832,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 8,
-                    "outUcastPkts": 10415,
-                    "inMulticastPkts": 130,
-                    "lastUpdateTimestamp": 1606001634.6744988,
-                    "inBroadcastPkts": 6,
-                    "inOctets": 748831,
-                    "outDiscards": 0,
-                    "outOctets": 799358,
-                    "inUcastPkts": 10476,
-                    "outMulticastPkts": 578,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 13,
-                    "outUcastPkts": 1,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001634.3951244,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 12096,
-                    "outDiscards": 0,
-                    "outOctets": 428422,
-                    "inUcastPkts": 1,
-                    "outMulticastPkts": 3387,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 7377,
-                    "inMulticastPkts": 680,
-                    "lastUpdateTimestamp": 1606001634.4201868,
-                    "inBroadcastPkts": 4,
-                    "inOctets": 735120,
-                    "outDiscards": 0,
-                    "outOctets": 723417,
-                    "inUcastPkts": 7377,
-                    "outMulticastPkts": 238,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 13,
-                    "outUcastPkts": 1,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001634.3947716,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 12300,
-                    "outDiscards": 0,
-                    "outOctets": 428673,
-                    "inUcastPkts": 2,
-                    "outMulticastPkts": 3389,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436217,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "spine01",
-        "address": "192.168.121.42",
-        "data": {
-            "interfaces": {
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 3072,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001633.9175391,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 338671,
-                    "outDiscards": 0,
-                    "outOctets": 485146,
-                    "inUcastPkts": 4470,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 10498,
-                    "inMulticastPkts": 164,
-                    "lastUpdateTimestamp": 1606001634.623627,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 749920,
-                    "outDiscards": 0,
-                    "outOctets": 888568,
-                    "inUcastPkts": 10441,
-                    "outMulticastPkts": 1263,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 10518,
-                    "inMulticastPkts": 906,
-                    "lastUpdateTimestamp": 1606001634.6365318,
-                    "inBroadcastPkts": 2,
-                    "inOctets": 846733,
-                    "outDiscards": 0,
-                    "outOctets": 798915,
-                    "inUcastPkts": 10519,
-                    "outMulticastPkts": 520,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 10527,
-                    "inMulticastPkts": 531,
-                    "lastUpdateTimestamp": 1606001634.8203616,
-                    "inBroadcastPkts": 2,
-                    "inOctets": 795772,
-                    "outDiscards": 0,
-                    "outOctets": 851457,
-                    "inUcastPkts": 10457,
-                    "outMulticastPkts": 941,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 22,
-                    "outUcastPkts": 10270,
-                    "inMulticastPkts": 221,
-                    "lastUpdateTimestamp": 1606001634.8285904,
-                    "inBroadcastPkts": 20,
-                    "inOctets": 748282,
-                    "outDiscards": 0,
-                    "outOctets": 874506,
-                    "inUcastPkts": 10309,
-                    "outMulticastPkts": 1271,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 6,
-                    "outUcastPkts": 10477,
-                    "inMulticastPkts": 578,
-                    "lastUpdateTimestamp": 1606001634.8046627,
-                    "inBroadcastPkts": 8,
-                    "inOctets": 799358,
-                    "outDiscards": 0,
-                    "outOctets": 834308,
-                    "inUcastPkts": 10415,
-                    "outMulticastPkts": 832,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 37,
-                    "outUcastPkts": 8094,
-                    "inMulticastPkts": 161,
-                    "lastUpdateTimestamp": 1606001634.8164523,
-                    "inBroadcastPkts": 56,
-                    "inOctets": 585867,
-                    "outDiscards": 0,
-                    "outOctets": 721541,
-                    "inUcastPkts": 8065,
-                    "outMulticastPkts": 1265,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436289,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf03",
-        "address": "192.168.121.88",
-        "data": {
-            "interfaces": {
-                "Port-Channel12": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 7376,
-                    "inMulticastPkts": 383,
-                    "lastUpdateTimestamp": 1606001635.390672,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 740200,
-                    "outDiscards": 0,
-                    "outOctets": 697844,
-                    "inUcastPkts": 7378,
-                    "outMulticastPkts": 388,
-                    "inDiscards": 0
-                },
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 3193,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001635.0006096,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 285270,
-                    "outDiscards": 0,
-                    "outOctets": 502812,
-                    "inUcastPkts": 3908,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 236,
-                    "lastUpdateTimestamp": 1606001628.3980186,
-                    "inBroadcastPkts": 14,
-                    "inOctets": 27391,
-                    "outDiscards": 0,
-                    "outOctets": 121740,
-                    "inUcastPkts": 2,
-                    "outMulticastPkts": 1012,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 10476,
-                    "inMulticastPkts": 155,
-                    "lastUpdateTimestamp": 1606001635.8994908,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 754302,
-                    "outDiscards": 0,
-                    "outOctets": 843473,
-                    "inUcastPkts": 10518,
-                    "outMulticastPkts": 906,
-                    "inDiscards": 0
-                },
-                "Port-Channel1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 14,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001635.390614,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 12732,
-                    "outDiscards": 0,
-                    "outOctets": 529882,
-                    "inUcastPkts": 11,
-                    "outMulticastPkts": 4203,
-                    "inDiscards": 0
-                },
-                "Port-Channel2": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 14,
-                    "inMulticastPkts": 91,
-                    "lastUpdateTimestamp": 1606001635.3906562,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 12936,
-                    "outDiscards": 0,
-                    "outOctets": 529882,
-                    "inUcastPkts": 12,
-                    "outMulticastPkts": 4203,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 10519,
-                    "inMulticastPkts": 155,
-                    "lastUpdateTimestamp": 1606001635.7042239,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 754539,
-                    "outDiscards": 0,
-                    "outOctets": 846733,
-                    "inUcastPkts": 10518,
-                    "outMulticastPkts": 906,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 4,
-                    "outUcastPkts": 14,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001635.1169233,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 13320,
-                    "outDiscards": 0,
-                    "outOctets": 638982,
-                    "inUcastPkts": 12,
-                    "outMulticastPkts": 5095,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 4,
-                    "outUcastPkts": 7377,
-                    "inMulticastPkts": 238,
-                    "lastUpdateTimestamp": 1606001635.544206,
-                    "inBroadcastPkts": 2,
-                    "inOctets": 723417,
-                    "outDiscards": 0,
-                    "outOctets": 775976,
-                    "inUcastPkts": 7377,
-                    "outMulticastPkts": 1016,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 4,
-                    "outUcastPkts": 14,
-                    "inMulticastPkts": 94,
-                    "lastUpdateTimestamp": 1606001635.1165822,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 13116,
-                    "outDiscards": 0,
-                    "outOctets": 638982,
-                    "inUcastPkts": 11,
-                    "outMulticastPkts": 5095,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436329,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "exit02",
-        "address": "192.168.121.46",
-        "data": {
-            "interfaces": {
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 5450,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001634.2836685,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 271066,
-                    "outDiscards": 0,
-                    "outOctets": 872579,
-                    "inUcastPkts": 3453,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 56,
-                    "outUcastPkts": 8059,
-                    "inMulticastPkts": 78,
-                    "lastUpdateTimestamp": 1606001634.659725,
-                    "inBroadcastPkts": 3,
-                    "inOctets": 575259,
-                    "outDiscards": 0,
-                    "outOctets": 585748,
-                    "inUcastPkts": 8085,
-                    "outMulticastPkts": 161,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 56,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 83,
-                    "lastUpdateTimestamp": 1606001633.678448,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 8340,
-                    "outDiscards": 0,
-                    "outOctets": 153727,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 1248,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 56,
-                    "outUcastPkts": 8066,
-                    "inMulticastPkts": 78,
-                    "lastUpdateTimestamp": 1606001634.660052,
-                    "inBroadcastPkts": 3,
-                    "inOctets": 575889,
-                    "outDiscards": 0,
-                    "outOctets": 585937,
-                    "inUcastPkts": 8094,
-                    "outMulticastPkts": 161,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 1469,
-                    "inMulticastPkts": 329,
-                    "lastUpdateTimestamp": 1606001634.3265588,
-                    "inBroadcastPkts": 78,
-                    "inOctets": 240729,
-                    "outDiscards": 0,
-                    "outOctets": 134452,
-                    "inUcastPkts": 2518,
-                    "outMulticastPkts": 150,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 1248,
-                    "lastUpdateTimestamp": 1606001633.6787817,
-                    "inBroadcastPkts": 56,
-                    "inOctets": 153727,
-                    "outDiscards": 0,
-                    "outOctets": 8340,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 83,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 58,
-                    "outUcastPkts": 2676,
-                    "inMulticastPkts": 77,
-                    "lastUpdateTimestamp": 1606001634.1168437,
-                    "inBroadcastPkts": 12,
-                    "inOctets": 254385,
-                    "outDiscards": 0,
-                    "outOctets": 219530,
-                    "inUcastPkts": 2358,
-                    "outMulticastPkts": 162,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436439,
-        "cmd": "show interfaces counters",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "spine02",
-        "address": "192.168.121.73",
-        "data": {
-            "interfaces": {
-                "Management1": {
-                    "outBroadcastPkts": 0,
-                    "outUcastPkts": 3111,
-                    "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001634.2205305,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 352331,
-                    "outDiscards": 0,
-                    "outOctets": 494565,
-                    "inUcastPkts": 4574,
-                    "outMulticastPkts": 0,
-                    "inDiscards": 0
-                },
-                "Ethernet2": {
-                    "outBroadcastPkts": 2,
-                    "outUcastPkts": 10533,
-                    "inMulticastPkts": 163,
-                    "lastUpdateTimestamp": 1606001634.8961256,
-                    "inBroadcastPkts": 0,
-                    "inOctets": 752223,
-                    "outDiscards": 0,
-                    "outOctets": 880604,
-                    "inUcastPkts": 10479,
-                    "outMulticastPkts": 1176,
-                    "inDiscards": 0
-                },
-                "Ethernet3": {
-                    "outBroadcastPkts": 1,
-                    "outUcastPkts": 10518,
-                    "inMulticastPkts": 906,
-                    "lastUpdateTimestamp": 1606001634.8509371,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 843473,
-                    "outDiscards": 0,
-                    "outOctets": 788243,
-                    "inUcastPkts": 10476,
-                    "outMulticastPkts": 434,
-                    "inDiscards": 0
-                },
-                "Ethernet1": {
-                    "outBroadcastPkts": 3,
-                    "outUcastPkts": 10506,
-                    "inMulticastPkts": 433,
-                    "lastUpdateTimestamp": 1606001634.8634734,
-                    "inBroadcastPkts": 1,
-                    "inOctets": 788450,
-                    "outDiscards": 0,
-                    "outOctets": 848281,
-                    "inUcastPkts": 10519,
-                    "outMulticastPkts": 927,
-                    "inDiscards": 0
-                },
-                "Ethernet6": {
-                    "outBroadcastPkts": 21,
-                    "outUcastPkts": 10297,
-                    "inMulticastPkts": 191,
-                    "lastUpdateTimestamp": 1606001634.851234,
-                    "inBroadcastPkts": 16,
-                    "inOctets": 743317,
-                    "outDiscards": 0,
-                    "outOctets": 865464,
-                    "inUcastPkts": 10294,
-                    "outMulticastPkts": 1183,
-                    "inDiscards": 0
-                },
-                "Ethernet4": {
-                    "outBroadcastPkts": 8,
-                    "outUcastPkts": 10447,
-                    "inMulticastPkts": 578,
-                    "lastUpdateTimestamp": 1606001635.0114436,
-                    "inBroadcastPkts": 6,
-                    "inOctets": 800671,
-                    "outDiscards": 0,
-                    "outOctets": 821828,
-                    "inUcastPkts": 10432,
-                    "outMulticastPkts": 746,
-                    "inDiscards": 0
-                },
-                "Ethernet5": {
-                    "outBroadcastPkts": 36,
-                    "outUcastPkts": 8085,
-                    "inMulticastPkts": 359,
-                    "lastUpdateTimestamp": 1606001634.8772924,
-                    "inBroadcastPkts": 166,
-                    "inOctets": 613517,
-                    "outDiscards": 0,
-                    "outOctets": 710430,
-                    "inUcastPkts": 8059,
-                    "outMulticastPkts": 1179,
-                    "inDiscards": 0
-                }
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030436640,
+        "timestamp": 1610377086188,
         "cmd": "show interfaces counters",
         "devtype": "eos",
         "namespace": "eos",
         "hostname": "exit01",
-        "address": "192.168.121.104",
+        "address": "10.255.2.251",
         "data": {
             "interfaces": {
                 "Management1": {
                     "outBroadcastPkts": 0,
-                    "outUcastPkts": 5621,
+                    "outUcastPkts": 32886,
                     "inMulticastPkts": 0,
-                    "lastUpdateTimestamp": 1606001635.2574315,
+                    "lastUpdateTimestamp": 1610348284.2798707,
                     "inBroadcastPkts": 0,
-                    "inOctets": 446862,
+                    "inOctets": 21269959,
                     "outDiscards": 0,
-                    "outOctets": 884684,
-                    "inUcastPkts": 5685,
+                    "outOctets": 3397321,
+                    "inUcastPkts": 402771,
                     "outMulticastPkts": 0,
                     "inDiscards": 0
                 },
                 "Ethernet2": {
-                    "outBroadcastPkts": 16,
-                    "outUcastPkts": 10295,
-                    "inMulticastPkts": 1183,
-                    "lastUpdateTimestamp": 1606001635.6527762,
-                    "inBroadcastPkts": 21,
-                    "inOctets": 865534,
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37348,
+                    "inMulticastPkts": 108383,
+                    "lastUpdateTimestamp": 1610348278.701239,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13748794,
                     "outDiscards": 0,
-                    "outOctets": 820517,
-                    "inUcastPkts": 10298,
-                    "outMulticastPkts": 825,
+                    "outOctets": 12975617,
+                    "inUcastPkts": 37312,
+                    "outMulticastPkts": 108385,
                     "inDiscards": 0
                 },
                 "Ethernet3": {
-                    "outBroadcastPkts": 36,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 273,
-                    "lastUpdateTimestamp": 1606001634.5333416,
+                    "outBroadcastPkts": 3,
+                    "outUcastPkts": 766794,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348284.5877225,
                     "inBroadcastPkts": 0,
-                    "inOctets": 29078,
+                    "inOctets": 63192956,
                     "outDiscards": 0,
-                    "outOctets": 395798,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 3241,
+                    "outOctets": 66447407,
+                    "inUcastPkts": 766774,
+                    "outMulticastPkts": 26242,
                     "inDiscards": 0
                 },
                 "Ethernet1": {
-                    "outBroadcastPkts": 20,
-                    "outUcastPkts": 10310,
-                    "inMulticastPkts": 1271,
-                    "lastUpdateTimestamp": 1606001635.5630846,
-                    "inBroadcastPkts": 22,
-                    "inOctets": 874576,
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37384,
+                    "inMulticastPkts": 108386,
+                    "lastUpdateTimestamp": 1610348282.5881934,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 13751093,
                     "outDiscards": 0,
-                    "outOctets": 814286,
-                    "inUcastPkts": 10271,
-                    "outMulticastPkts": 763,
+                    "outOctets": 12987381,
+                    "inUcastPkts": 37320,
+                    "outMulticastPkts": 108380,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 61011,
+                    "inMulticastPkts": 28254,
+                    "lastUpdateTimestamp": 1610348280.4528828,
+                    "inBroadcastPkts": 654,
+                    "inOctets": 12477366,
+                    "outDiscards": 0,
+                    "outOctets": 7507474,
+                    "inUcastPkts": 60143,
+                    "outMulticastPkts": 26243,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086175,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "exit02",
+        "address": "10.255.2.254",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 32778,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348284.3380563,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21253396,
+                    "outDiscards": 0,
+                    "outOctets": 3377620,
+                    "inUcastPkts": 402677,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37353,
+                    "inMulticastPkts": 108386,
+                    "lastUpdateTimestamp": 1610348278.0828986,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13771145,
+                    "outDiscards": 0,
+                    "outOctets": 12956829,
+                    "inUcastPkts": 37310,
+                    "outMulticastPkts": 108387,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 3,
+                    "outUcastPkts": 766829,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348283.088015,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 63194683,
+                    "outDiscards": 0,
+                    "outOctets": 66447265,
+                    "inUcastPkts": 766804,
+                    "outMulticastPkts": 26242,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37350,
+                    "inMulticastPkts": 108389,
+                    "lastUpdateTimestamp": 1610348283.063896,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13772606,
+                    "outDiscards": 0,
+                    "outOctets": 12982477,
+                    "inUcastPkts": 37319,
+                    "outMulticastPkts": 108387,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 61007,
+                    "inMulticastPkts": 28285,
+                    "lastUpdateTimestamp": 1610348277.081522,
+                    "inBroadcastPkts": 652,
+                    "inOctets": 12487946,
+                    "outDiscards": 0,
+                    "outOctets": 7507097,
+                    "inUcastPkts": 60175,
+                    "outMulticastPkts": 26242,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086168,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf01",
+        "address": "10.255.2.189",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 36317,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348285.3213553,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21590358,
+                    "outDiscards": 0,
+                    "outOctets": 3852218,
+                    "inUcastPkts": 406806,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37420,
+                    "inMulticastPkts": 108363,
+                    "lastUpdateTimestamp": 1610348285.0564268,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13794848,
+                    "outDiscards": 0,
+                    "outOctets": 12941239,
+                    "inUcastPkts": 37641,
+                    "outMulticastPkts": 108361,
                     "inDiscards": 0
                 },
                 "Ethernet6": {
-                    "outBroadcastPkts": 36,
-                    "outUcastPkts": 1873,
-                    "inMulticastPkts": 390,
-                    "lastUpdateTimestamp": 1606001635.6971898,
-                    "inBroadcastPkts": 11,
-                    "inOctets": 299379,
+                    "outBroadcastPkts": 6,
+                    "outUcastPkts": 2047747,
+                    "inMulticastPkts": 52714,
+                    "lastUpdateTimestamp": 1610348285.6056178,
+                    "inBroadcastPkts": 12,
+                    "inOctets": 177789776,
                     "outDiscards": 0,
-                    "outOctets": 372968,
-                    "inUcastPkts": 3230,
-                    "outMulticastPkts": 1834,
+                    "outOctets": 190516418,
+                    "inUcastPkts": 2047672,
+                    "outMulticastPkts": 52941,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 96,
+                    "inMulticastPkts": 25450,
+                    "lastUpdateTimestamp": 1610348285.3169923,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3250988,
+                    "outDiscards": 0,
+                    "outOctets": 103367367,
+                    "inUcastPkts": 74,
+                    "outMulticastPkts": 813235,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37299,
+                    "inMulticastPkts": 108358,
+                    "lastUpdateTimestamp": 1610348285.0559378,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13749655,
+                    "outDiscards": 0,
+                    "outOctets": 12885965,
+                    "inUcastPkts": 37292,
+                    "outMulticastPkts": 108357,
+                    "inDiscards": 0
+                },
+                "Port-Channel1": {
+                    "outBroadcastPkts": 7,
+                    "outUcastPkts": 2047813,
+                    "inMulticastPkts": 105189,
+                    "lastUpdateTimestamp": 1610348285.5464244,
+                    "inBroadcastPkts": 14,
+                    "inOctets": 183777522,
+                    "outDiscards": 0,
+                    "outOctets": 196501225,
+                    "inUcastPkts": 2047733,
+                    "outMulticastPkts": 105412,
+                    "inDiscards": 0
+                },
+                "Port-Channel3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 96,
+                    "inMulticastPkts": 25448,
+                    "lastUpdateTimestamp": 1610348285.5465229,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3250732,
+                    "outDiscards": 0,
+                    "outOctets": 103366627,
+                    "inUcastPkts": 74,
+                    "outMulticastPkts": 813229,
+                    "inDiscards": 0
+                },
+                "Port-Channel4": {
+                    "outBroadcastPkts": 4,
+                    "outUcastPkts": 92,
+                    "inMulticastPkts": 25228,
+                    "lastUpdateTimestamp": 1610348285.5464852,
+                    "inBroadcastPkts": 2,
+                    "inOctets": 3232524,
+                    "outDiscards": 0,
+                    "outOctets": 103381655,
+                    "inUcastPkts": 49,
+                    "outMulticastPkts": 813449,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 4,
+                    "outUcastPkts": 92,
+                    "inMulticastPkts": 25231,
+                    "lastUpdateTimestamp": 1610348285.3165958,
+                    "inBroadcastPkts": 2,
+                    "inOctets": 3232908,
+                    "outDiscards": 0,
+                    "outOctets": 103382395,
+                    "inUcastPkts": 49,
+                    "outMulticastPkts": 813455,
+                    "inDiscards": 0
+                },
+                "Ethernet5": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 69,
+                    "inMulticastPkts": 52497,
+                    "lastUpdateTimestamp": 1610348281.545836,
+                    "inBroadcastPkts": 2,
+                    "inOctets": 5990580,
+                    "outDiscards": 0,
+                    "outOctets": 5988965,
+                    "inUcastPkts": 62,
+                    "outMulticastPkts": 52502,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086166,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf02",
+        "address": "10.255.2.191",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 32435,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348284.4026334,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21207409,
+                    "outDiscards": 0,
+                    "outOctets": 3367591,
+                    "inUcastPkts": 402059,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37597,
+                    "inMulticastPkts": 108356,
+                    "lastUpdateTimestamp": 1610348277.4530213,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13747834,
+                    "outDiscards": 0,
+                    "outOctets": 12948942,
+                    "inUcastPkts": 37299,
+                    "outMulticastPkts": 108352,
+                    "inDiscards": 0
+                },
+                "Ethernet6": {
+                    "outBroadcastPkts": 12,
+                    "outUcastPkts": 2047672,
+                    "inMulticastPkts": 52941,
+                    "lastUpdateTimestamp": 1610348284.4169202,
+                    "inBroadcastPkts": 6,
+                    "inOctets": 190516418,
+                    "outDiscards": 0,
+                    "outOctets": 177789776,
+                    "inUcastPkts": 2047747,
+                    "outMulticastPkts": 52714,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 36,
+                    "inMulticastPkts": 25231,
+                    "lastUpdateTimestamp": 1610348283.6838915,
+                    "inBroadcastPkts": 12,
+                    "inOctets": 3236568,
+                    "outDiscards": 0,
+                    "outOctets": 151583977,
+                    "inUcastPkts": 76,
+                    "outMulticastPkts": 1205334,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37278,
+                    "inMulticastPkts": 108353,
+                    "lastUpdateTimestamp": 1610348284.3320181,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13733421,
+                    "outDiscards": 0,
+                    "outOctets": 12895816,
+                    "inUcastPkts": 37271,
+                    "outMulticastPkts": 108351,
+                    "inDiscards": 0
+                },
+                "Port-Channel1": {
+                    "outBroadcastPkts": 14,
+                    "outUcastPkts": 2047733,
+                    "inMulticastPkts": 105410,
+                    "lastUpdateTimestamp": 1610348284.3386416,
+                    "inBroadcastPkts": 7,
+                    "inOctets": 196500969,
+                    "outDiscards": 0,
+                    "outOctets": 183777522,
+                    "inUcastPkts": 2047813,
+                    "outMulticastPkts": 105189,
+                    "inDiscards": 0
+                },
+                "Port-Channel3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 36,
+                    "inMulticastPkts": 25228,
+                    "lastUpdateTimestamp": 1610348284.3386905,
+                    "inBroadcastPkts": 12,
+                    "inOctets": 3236184,
+                    "outDiscards": 0,
+                    "outOctets": 151582981,
+                    "inUcastPkts": 76,
+                    "outMulticastPkts": 1205326,
+                    "inDiscards": 0
+                },
+                "Port-Channel4": {
+                    "outBroadcastPkts": 2,
+                    "outUcastPkts": 46,
+                    "inMulticastPkts": 25449,
+                    "lastUpdateTimestamp": 1610348284.3386807,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3249026,
+                    "outDiscards": 0,
+                    "outOctets": 151583872,
+                    "inUcastPkts": 45,
+                    "outMulticastPkts": 1205327,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 2,
+                    "outUcastPkts": 46,
+                    "inMulticastPkts": 25452,
+                    "lastUpdateTimestamp": 1610348283.6739633,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3249410,
+                    "outDiscards": 0,
+                    "outOctets": 151584740,
+                    "inUcastPkts": 45,
+                    "outMulticastPkts": 1205334,
+                    "inDiscards": 0
+                },
+                "Ethernet5": {
+                    "outBroadcastPkts": 2,
+                    "outUcastPkts": 62,
+                    "inMulticastPkts": 52502,
+                    "lastUpdateTimestamp": 1610348280.352265,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 5988965,
+                    "outDiscards": 0,
+                    "outOctets": 5990580,
+                    "inUcastPkts": 69,
+                    "outMulticastPkts": 52497,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086172,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine02",
+        "address": "10.255.2.119",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 32248,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348284.5641441,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21195840,
+                    "outDiscards": 0,
+                    "outOctets": 3334209,
+                    "inUcastPkts": 402028,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37271,
+                    "inMulticastPkts": 108351,
+                    "lastUpdateTimestamp": 1610348284.9964511,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12895816,
+                    "outDiscards": 0,
+                    "outOctets": 13733720,
+                    "inUcastPkts": 37278,
+                    "outMulticastPkts": 108357,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37285,
+                    "inMulticastPkts": 108363,
+                    "lastUpdateTimestamp": 1610348281.7635343,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12898691,
+                    "outDiscards": 0,
+                    "outOctets": 13767109,
+                    "inUcastPkts": 37311,
+                    "outMulticastPkts": 108380,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37292,
+                    "inMulticastPkts": 108357,
+                    "lastUpdateTimestamp": 1610348284.524941,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12885965,
+                    "outDiscards": 0,
+                    "outOctets": 13749872,
+                    "inUcastPkts": 37299,
+                    "outMulticastPkts": 108361,
+                    "inDiscards": 0
+                },
+                "Ethernet6": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37310,
+                    "inMulticastPkts": 108387,
+                    "lastUpdateTimestamp": 1610348277.9908478,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12956829,
+                    "outDiscards": 0,
+                    "outOctets": 13771246,
+                    "inUcastPkts": 37353,
+                    "outMulticastPkts": 108387,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37253,
+                    "inMulticastPkts": 108355,
+                    "lastUpdateTimestamp": 1610348282.7380383,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 12861527,
+                    "outDiscards": 0,
+                    "outOctets": 13756440,
+                    "inUcastPkts": 37264,
+                    "outMulticastPkts": 108362,
+                    "inDiscards": 0
+                },
+                "Ethernet5": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37312,
+                    "inMulticastPkts": 108385,
+                    "lastUpdateTimestamp": 1610348278.6607409,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12975617,
+                    "outDiscards": 0,
+                    "outOctets": 13749069,
+                    "inUcastPkts": 37348,
+                    "outMulticastPkts": 108387,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086332,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf03",
+        "address": "10.255.2.190",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 33253,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348285.5109894,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21286737,
+                    "outDiscards": 0,
+                    "outOctets": 3468309,
+                    "inUcastPkts": 403112,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 4,
+                    "outUcastPkts": 37559,
+                    "inMulticastPkts": 108371,
+                    "lastUpdateTimestamp": 1610348285.120951,
+                    "inBroadcastPkts": 3,
+                    "inOctets": 13813120,
+                    "outDiscards": 0,
+                    "outOctets": 12911558,
+                    "inUcastPkts": 37631,
+                    "outMulticastPkts": 108365,
+                    "inDiscards": 0
+                },
+                "Ethernet6": {
+                    "outBroadcastPkts": 15,
+                    "outUcastPkts": 109,
+                    "inMulticastPkts": 52488,
+                    "lastUpdateTimestamp": 1610348280.9768803,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 5983872,
+                    "outDiscards": 0,
+                    "outOctets": 6042922,
+                    "inUcastPkts": 2,
+                    "outMulticastPkts": 53153,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 43,
+                    "inMulticastPkts": 25452,
+                    "lastUpdateTimestamp": 1610348285.5003326,
+                    "inBroadcastPkts": 6,
+                    "inOctets": 3248190,
+                    "outDiscards": 0,
+                    "outOctets": 151601971,
+                    "inUcastPkts": 19,
+                    "outMulticastPkts": 1205464,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37311,
+                    "inMulticastPkts": 108364,
+                    "lastUpdateTimestamp": 1610348282.6963549,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 13765750,
+                    "outDiscards": 0,
+                    "outOctets": 12898691,
+                    "inUcastPkts": 37285,
+                    "outMulticastPkts": 108363,
+                    "inDiscards": 0
+                },
+                "Port-Channel1": {
+                    "outBroadcastPkts": 17,
+                    "outUcastPkts": 2047048,
+                    "inMulticastPkts": 104972,
+                    "lastUpdateTimestamp": 1610348285.662291,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 196385204,
+                    "outDiscards": 0,
+                    "outOctets": 183775128,
+                    "inUcastPkts": 2046910,
+                    "outMulticastPkts": 105634,
+                    "inDiscards": 0
+                },
+                "Port-Channel3": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 43,
+                    "inMulticastPkts": 25450,
+                    "lastUpdateTimestamp": 1610348285.6623409,
+                    "inBroadcastPkts": 6,
+                    "inOctets": 3247934,
+                    "outDiscards": 0,
+                    "outOctets": 151601359,
+                    "inUcastPkts": 19,
+                    "outMulticastPkts": 1205459,
+                    "inDiscards": 0
+                },
+                "Port-Channel4": {
+                    "outBroadcastPkts": 6,
+                    "outUcastPkts": 167,
+                    "inMulticastPkts": 25448,
+                    "lastUpdateTimestamp": 1610348285.6623304,
+                    "inBroadcastPkts": 3,
+                    "inOctets": 3247920,
+                    "outDiscards": 0,
+                    "outOctets": 151626501,
+                    "inUcastPkts": 33,
+                    "outMulticastPkts": 1205680,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 6,
+                    "outUcastPkts": 167,
+                    "inMulticastPkts": 25450,
+                    "lastUpdateTimestamp": 1610348285.3502488,
+                    "inBroadcastPkts": 3,
+                    "inOctets": 3248176,
+                    "outDiscards": 0,
+                    "outOctets": 151627113,
+                    "inUcastPkts": 33,
+                    "outMulticastPkts": 1205685,
+                    "inDiscards": 0
+                },
+                "Ethernet5": {
+                    "outBroadcastPkts": 2,
+                    "outUcastPkts": 2046939,
+                    "inMulticastPkts": 52493,
+                    "lastUpdateTimestamp": 1610348286.1274393,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 190402507,
+                    "outDiscards": 0,
+                    "outOctets": 177733886,
+                    "inUcastPkts": 2046909,
+                    "outMulticastPkts": 52495,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086347,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf04",
+        "address": "10.255.2.188",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 32363,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348286.3646495,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21194080,
+                    "outDiscards": 0,
+                    "outOctets": 3349425,
+                    "inUcastPkts": 402012,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37345,
+                    "inMulticastPkts": 108370,
+                    "lastUpdateTimestamp": 1610348287.0145907,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 13743447,
+                    "outDiscards": 0,
+                    "outOctets": 12923511,
+                    "inUcastPkts": 37305,
+                    "outMulticastPkts": 108364,
+                    "inDiscards": 0
+                },
+                "Ethernet6": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 2,
+                    "inMulticastPkts": 53153,
+                    "lastUpdateTimestamp": 1610348281.9728162,
+                    "inBroadcastPkts": 15,
+                    "inOctets": 6042922,
+                    "outDiscards": 0,
+                    "outOctets": 5983872,
+                    "inUcastPkts": 109,
+                    "outMulticastPkts": 52488,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 47,
+                    "inMulticastPkts": 25231,
+                    "lastUpdateTimestamp": 1610348287.0477486,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3235136,
+                    "outDiscards": 0,
+                    "outOctets": 103223544,
+                    "inUcastPkts": 87,
+                    "outMulticastPkts": 812150,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37264,
+                    "inMulticastPkts": 108359,
+                    "lastUpdateTimestamp": 1610348284.6671214,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 13756223,
+                    "outDiscards": 0,
+                    "outOctets": 12861527,
+                    "inUcastPkts": 37253,
+                    "outMulticastPkts": 108355,
+                    "inDiscards": 0
+                },
+                "Port-Channel1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 2046910,
+                    "inMulticastPkts": 105634,
+                    "lastUpdateTimestamp": 1610348286.9382892,
+                    "inBroadcastPkts": 17,
+                    "inOctets": 183775054,
+                    "outDiscards": 0,
+                    "outOctets": 196385204,
+                    "inUcastPkts": 2047047,
+                    "outMulticastPkts": 104972,
+                    "inDiscards": 0
+                },
+                "Port-Channel3": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 47,
+                    "inMulticastPkts": 25228,
+                    "lastUpdateTimestamp": 1610348286.9383528,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3234752,
+                    "outDiscards": 0,
+                    "outOctets": 103222548,
+                    "inUcastPkts": 87,
+                    "outMulticastPkts": 812142,
+                    "inDiscards": 0
+                },
+                "Port-Channel4": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 25,
+                    "inMulticastPkts": 25228,
+                    "lastUpdateTimestamp": 1610348286.9383404,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3235856,
+                    "outDiscards": 0,
+                    "outOctets": 103221140,
+                    "inUcastPkts": 90,
+                    "outMulticastPkts": 812142,
                     "inDiscards": 0
                 },
                 "Ethernet4": {
                     "outBroadcastPkts": 0,
-                    "outUcastPkts": 0,
-                    "inMulticastPkts": 3241,
-                    "lastUpdateTimestamp": 1606001634.5337625,
-                    "inBroadcastPkts": 36,
-                    "inOctets": 395798,
+                    "outUcastPkts": 25,
+                    "inMulticastPkts": 25231,
+                    "lastUpdateTimestamp": 1610348287.0470703,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 3236240,
                     "outDiscards": 0,
-                    "outOctets": 29078,
-                    "inUcastPkts": 0,
-                    "outMulticastPkts": 273,
+                    "outOctets": 103222008,
+                    "inUcastPkts": 90,
+                    "outMulticastPkts": 812149,
                     "inDiscards": 0
                 },
                 "Ethernet5": {
-                    "outBroadcastPkts": 42,
-                    "outUcastPkts": 3433,
-                    "inMulticastPkts": 92,
-                    "lastUpdateTimestamp": 1606001635.6862454,
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 2046909,
+                    "inMulticastPkts": 52495,
+                    "lastUpdateTimestamp": 1610348287.1246164,
                     "inBroadcastPkts": 2,
-                    "inOctets": 323766,
+                    "inOctets": 177733812,
                     "outDiscards": 0,
-                    "outOctets": 478183,
-                    "inUcastPkts": 3013,
-                    "outMulticastPkts": 1834,
+                    "outOctets": 190402507,
+                    "inUcastPkts": 2046938,
+                    "outMulticastPkts": 52493,
+                    "inDiscards": 0
+                }
+            }
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377086163,
+        "cmd": "show interfaces counters",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine01",
+        "address": "10.255.2.120",
+        "data": {
+            "interfaces": {
+                "Management1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 32322,
+                    "inMulticastPkts": 0,
+                    "lastUpdateTimestamp": 1610348284.8444235,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 21218856,
+                    "outDiscards": 0,
+                    "outOctets": 3347805,
+                    "inUcastPkts": 402115,
+                    "outMulticastPkts": 0,
+                    "inDiscards": 0
+                },
+                "Ethernet2": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37299,
+                    "inMulticastPkts": 108352,
+                    "lastUpdateTimestamp": 1610348278.4037087,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12948942,
+                    "outDiscards": 0,
+                    "outOctets": 13748051,
+                    "inUcastPkts": 37597,
+                    "outMulticastPkts": 108359,
+                    "inDiscards": 0
+                },
+                "Ethernet3": {
+                    "outBroadcastPkts": 6,
+                    "outUcastPkts": 37631,
+                    "inMulticastPkts": 108365,
+                    "lastUpdateTimestamp": 1610348284.4750051,
+                    "inBroadcastPkts": 4,
+                    "inOctets": 12911558,
+                    "outDiscards": 0,
+                    "outOctets": 13814733,
+                    "inUcastPkts": 37559,
+                    "outMulticastPkts": 108389,
+                    "inDiscards": 0
+                },
+                "Ethernet1": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37641,
+                    "inMulticastPkts": 108361,
+                    "lastUpdateTimestamp": 1610348284.8123076,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12941239,
+                    "outDiscards": 0,
+                    "outOctets": 13795065,
+                    "inUcastPkts": 37420,
+                    "outMulticastPkts": 108366,
+                    "inDiscards": 0
+                },
+                "Ethernet6": {
+                    "outBroadcastPkts": 0,
+                    "outUcastPkts": 37319,
+                    "inMulticastPkts": 108387,
+                    "lastUpdateTimestamp": 1610348283.2601666,
+                    "inBroadcastPkts": 1,
+                    "inOctets": 12982477,
+                    "outDiscards": 0,
+                    "outOctets": 13772707,
+                    "inUcastPkts": 37350,
+                    "outMulticastPkts": 108390,
+                    "inDiscards": 0
+                },
+                "Ethernet4": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37305,
+                    "inMulticastPkts": 108364,
+                    "lastUpdateTimestamp": 1610348285.3718867,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 12923511,
+                    "outDiscards": 0,
+                    "outOctets": 13743664,
+                    "inUcastPkts": 37345,
+                    "outMulticastPkts": 108373,
+                    "inDiscards": 0
+                },
+                "Ethernet5": {
+                    "outBroadcastPkts": 1,
+                    "outUcastPkts": 37320,
+                    "inMulticastPkts": 108380,
+                    "lastUpdateTimestamp": 1610348282.8331788,
+                    "inBroadcastPkts": 0,
+                    "inOctets": 12987381,
+                    "outDiscards": 0,
+                    "outOctets": 13751194,
+                    "inUcastPkts": 37384,
+                    "outMulticastPkts": 108387,
                     "inDiscards": 0
                 }
             }

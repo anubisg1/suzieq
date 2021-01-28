@@ -98,6 +98,9 @@ class InterfaceService(Service):
                 entry['vlan'] = int(entry['ifname'].split('Vlan')[1])
                 vlan_entries[entry['ifname']] = entry
 
+            if entry.get('adminState', 'disabled') != 'disabled':
+                entry['adminState'] = 'up'
+
             tmpent = entry.get("ipAddressList", [[]])
             if not tmpent:
                 continue
@@ -204,6 +207,7 @@ class InterfaceService(Service):
 
         entry_dict = defaultdict(dict)
         drop_indices = []
+        new_entries = []
 
         for i, entry in enumerate(processed_data):
 
@@ -269,9 +273,16 @@ class InterfaceService(Service):
                 continue
 
             # Uninteresting logical interface
+            gwmacs = entry.get('_gwMacaddr', [])
             for i, ifname in enumerate(entry['logicalIfname']):
                 v4addresses = []
                 v6addresses = []
+                macaddr = None
+                if len(gwmacs) > i:
+                    macaddr = gwmacs[i]
+                if not macaddr:
+                    macaddr = entry.get('macaddr', '')
+
                 if entry['afi'][i] is None:
                     continue
                 for x in entry['afi'][i]:
@@ -298,12 +309,16 @@ class InterfaceService(Service):
                              'type': 'logical',
                              'speed': entry['speed'],
                              'master': vrf,
+                             'macaddr': macaddr,
                              'adminState': 'up',
                              'description': entry['description'],
                              'statusChangeTimestamp':
                              entry['statusChangeTimestamp'],
                              }
-                if entry['logicalIfflags'][i][0].get('iff-up'):
+                new_entries.append(new_entry)
+                entry_dict[new_entry['ifname']] = new_entry
+                if (entry['logicalIfflags'][i][0].get('iff-up') or
+                        entry.get('type') == 'loopback'):
                     new_entry['state'] = 'up'
                 else:
                     new_entry['state'] = 'down'
@@ -334,16 +349,41 @@ class InterfaceService(Service):
         if drop_indices:
             processed_data = np.delete(processed_data, drop_indices).tolist()
 
+        if new_entries:
+            processed_data.extend(new_entries)
+
         return processed_data
 
     def _clean_nxos_data(self, processed_data, raw_data):
         """Complex cleanup of NXOS interface data"""
         new_entries = []
         unnum_intf = {}
+        drop_indices = []
+        entry_dict = defaultdict(dict)
 
         unnum_intf_entry_idx = []  # backtrack to interface to fix
 
         for entry_idx, entry in enumerate(processed_data):
+            # if its the Linux ip link command output, massage the ifname
+            # and copy over the values and drop the entry_dict
+            if entry.get('_entryType', '') == 'mtumac':
+                old_entry = entry_dict[entry['ifname']]
+                if old_entry:
+                    old_entry['mtu'] = entry.get('mtu', 0)
+                    old_entry['macaddr'] = convert_macaddr_format_to_colon(
+                        entry.get('macaddr', '0000.0000.0000'))
+                    if old_entry.get('_portchannel'):
+                        pc_entry = entry_dict.get(old_entry['master'], None)
+                        if pc_entry:
+                            # The later ethernet port entries' MAC addr wins
+                            # over the earlier ones
+                            pc_entry['mtu'] = entry.get('mtu', 0)
+                            pc_entry['macaddr'] = entry['macaddr']
+                drop_indices.append(entry_idx)
+                continue
+
+            entry_dict[entry['ifname']] = entry
+
             # artificial field for comparison with previous poll result
             entry["statusChangeTimestamp1"] = entry.get(
                 "statusChangeTimestamp", '')
@@ -400,7 +440,7 @@ class InterfaceService(Service):
                 entry['ip6AddressList'] = []
 
             if entry.get('_anycastMac', ''):
-                entry['interfaceMac'] = entry['macaddr']
+                entry['interfaceMac'] = entry.get('macaddr', '')
                 entry['macaddr'] = entry['_anycastMac']
                 if entry.get('_forwardMode', '') != 'Anycast':
                     entry['reason'] += ', Fabric forwarding mode not enabled'
@@ -419,8 +459,11 @@ class InterfaceService(Service):
                 unnum_intf[elem] = [pri_ipaddr]
 
             speed = entry.get('speed', '')
-            if isinstance(speed, str) and speed.startswith("unknown enum"):
-                entry['speed'] = 0
+            if isinstance(speed, str):
+                if speed.startswith("unknown enum"):
+                    entry['speed'] = 0
+                elif speed.startswith('a-'):
+                    entry['speed'] = int(speed[2:])
 
             entry['type'] = entry.get('type', '').lower()
             if entry['type'] == 'eth':
@@ -443,6 +486,9 @@ class InterfaceService(Service):
         for idx in unnum_intf_entry_idx:
             entry = processed_data[idx]
             entry['ipAddressList'] = unnum_intf.get(entry['ifname'], [])
+
+        if drop_indices:
+            processed_data = np.delete(processed_data, drop_indices).tolist()
 
         if new_entries:
             processed_data.extend(new_entries)

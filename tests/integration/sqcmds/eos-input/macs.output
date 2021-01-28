@@ -1,102 +1,72 @@
 [
     {
         "status": 0,
-        "timestamp": 1606030435349,
-        "cmd": "/sbin/bridge fdb show",
-        "devtype": "cumulus",
-        "namespace": "eos",
-        "hostname": "internet",
-        "address": "192.168.121.2",
-        "version": "3.7.9",
-        "data": ""
-    }
-][
-    {
-        "status": 0,
-        "timestamp": 1606030435353,
+        "timestamp": 1610377086397,
         "cmd": "/sbin/bridge fdb show",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server101",
-        "address": "192.168.121.82",
-        "version": "16.04",
-        "data": ""
+        "hostname": "server301",
+        "address": "10.255.2.140",
+        "version": "18.04",
+        "data": "01:00:5e:00:00:01 dev eth0 self permanent\n33:33:00:00:00:01 dev eth0 self permanent\n33:33:ff:f0:b3:7a dev eth0 self permanent\n01:80:c2:00:00:00 dev eth0 self permanent\n01:80:c2:00:00:03 dev eth0 self permanent\n01:80:c2:00:00:0e dev eth0 self permanent\n01:00:5e:00:00:01 dev eth1 self permanent\n33:33:00:00:00:01 dev eth1 self permanent\n01:80:c2:00:00:02 dev eth1 self permanent\n01:80:c2:00:00:00 dev eth1 self permanent\n01:80:c2:00:00:03 dev eth1 self permanent\n01:80:c2:00:00:0e dev eth1 self permanent\n33:33:ff:6d:10:7e dev eth1 self permanent\n01:00:5e:00:00:01 dev eth2 self permanent\n33:33:00:00:00:01 dev eth2 self permanent\n01:80:c2:00:00:02 dev eth2 self permanent\n01:80:c2:00:00:00 dev eth2 self permanent\n01:80:c2:00:00:03 dev eth2 self permanent\n01:80:c2:00:00:0e dev eth2 self permanent\n33:33:ff:6d:10:7e dev eth2 self permanent\n33:33:00:00:00:01 dev bond0 self permanent\n01:00:5e:00:00:01 dev bond0 self permanent\n01:80:c2:00:00:00 dev bond0 self permanent\n01:80:c2:00:00:03 dev bond0 self permanent\n01:80:c2:00:00:0e dev bond0 self permanent\n33:33:ff:6d:10:7e dev bond0 self permanent\n"
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435353,
+        "timestamp": 1610377086401,
         "cmd": "/sbin/bridge fdb show",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server103",
-        "address": "192.168.121.121",
-        "version": "16.04",
-        "data": ""
+        "hostname": "server302",
+        "address": "10.255.2.97",
+        "version": "18.04",
+        "data": "01:00:5e:00:00:01 dev eth0 self permanent\n33:33:00:00:00:01 dev eth0 self permanent\n33:33:ff:09:34:c5 dev eth0 self permanent\n01:80:c2:00:00:00 dev eth0 self permanent\n01:80:c2:00:00:03 dev eth0 self permanent\n01:80:c2:00:00:0e dev eth0 self permanent\n01:00:5e:00:00:01 dev eth1 self permanent\n33:33:00:00:00:01 dev eth1 self permanent\n01:80:c2:00:00:02 dev eth1 self permanent\n01:80:c2:00:00:00 dev eth1 self permanent\n01:80:c2:00:00:03 dev eth1 self permanent\n01:80:c2:00:00:0e dev eth1 self permanent\n33:33:ff:3a:3a:08 dev eth1 self permanent\n01:00:5e:00:00:01 dev eth2 self permanent\n33:33:00:00:00:01 dev eth2 self permanent\n01:80:c2:00:00:02 dev eth2 self permanent\n01:80:c2:00:00:00 dev eth2 self permanent\n01:80:c2:00:00:03 dev eth2 self permanent\n01:80:c2:00:00:0e dev eth2 self permanent\n33:33:ff:3a:3a:08 dev eth2 self permanent\n33:33:00:00:00:01 dev bond0 self permanent\n01:00:5e:00:00:01 dev bond0 self permanent\n01:80:c2:00:00:00 dev bond0 self permanent\n01:80:c2:00:00:03 dev bond0 self permanent\n01:80:c2:00:00:0e dev bond0 self permanent\n33:33:ff:3a:3a:08 dev bond0 self permanent\n"
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435355,
-        "cmd": "/sbin/bridge fdb show",
-        "devtype": "linux",
-        "namespace": "eos",
-        "hostname": "edge01",
-        "address": "192.168.121.86",
-        "version": "16.04",
-        "data": "33:33:00:00:00:01 dev eth2.4 self permanent\n01:00:5e:00:00:01 dev eth2.4 self permanent\n33:33:00:00:00:02 dev eth2.4 self permanent\n"
-    }
-][
-    {
-        "status": 0,
-        "timestamp": 1606030435356,
+        "timestamp": 1610377086435,
         "cmd": "/sbin/bridge fdb show",
         "devtype": "linux",
         "namespace": "eos",
         "hostname": "server102",
-        "address": "192.168.121.26",
-        "version": "16.04",
-        "data": ""
+        "address": "10.255.2.130",
+        "version": "18.04",
+        "data": "01:00:5e:00:00:01 dev eth0 self permanent\n33:33:00:00:00:01 dev eth0 self permanent\n33:33:ff:8b:98:32 dev eth0 self permanent\n01:80:c2:00:00:00 dev eth0 self permanent\n01:80:c2:00:00:03 dev eth0 self permanent\n01:80:c2:00:00:0e dev eth0 self permanent\n01:00:5e:00:00:01 dev eth1 self permanent\n33:33:00:00:00:01 dev eth1 self permanent\n01:80:c2:00:00:02 dev eth1 self permanent\n01:80:c2:00:00:00 dev eth1 self permanent\n01:80:c2:00:00:03 dev eth1 self permanent\n33:33:ff:1f:b5:de dev eth1 self permanent\n01:80:c2:00:00:0e dev eth1 self permanent\n01:00:5e:00:00:01 dev eth2 self permanent\n33:33:00:00:00:01 dev eth2 self permanent\n01:80:c2:00:00:02 dev eth2 self permanent\n01:80:c2:00:00:00 dev eth2 self permanent\n01:80:c2:00:00:03 dev eth2 self permanent\n33:33:ff:1f:b5:de dev eth2 self permanent\n01:80:c2:00:00:0e dev eth2 self permanent\n33:33:00:00:00:01 dev bond0 self permanent\n01:00:5e:00:00:01 dev bond0 self permanent\n01:80:c2:00:00:00 dev bond0 self permanent\n01:80:c2:00:00:03 dev bond0 self permanent\n33:33:ff:1f:b5:de dev bond0 self permanent\n01:80:c2:00:00:0e dev bond0 self permanent\n"
     }
 ][
     {
         "status": 0,
-        "timestamp": 1606030435426,
+        "timestamp": 1610377086557,
         "cmd": "/sbin/bridge fdb show",
         "devtype": "linux",
         "namespace": "eos",
-        "hostname": "server104",
-        "address": "192.168.121.210",
-        "version": "16.04",
-        "data": ""
+        "hostname": "server101",
+        "address": "10.255.2.240",
+        "version": "18.04",
+        "data": "01:00:5e:00:00:01 dev eth0 self permanent\n33:33:00:00:00:01 dev eth0 self permanent\n33:33:ff:12:8d:5e dev eth0 self permanent\n01:80:c2:00:00:00 dev eth0 self permanent\n01:80:c2:00:00:03 dev eth0 self permanent\n01:80:c2:00:00:0e dev eth0 self permanent\n01:00:5e:00:00:01 dev eth1 self permanent\n33:33:00:00:00:01 dev eth1 self permanent\n01:80:c2:00:00:02 dev eth1 self permanent\n01:80:c2:00:00:00 dev eth1 self permanent\n01:80:c2:00:00:03 dev eth1 self permanent\n01:80:c2:00:00:0e dev eth1 self permanent\n33:33:ff:25:62:11 dev eth1 self permanent\n01:00:5e:00:00:01 dev eth2 self permanent\n33:33:00:00:00:01 dev eth2 self permanent\n01:80:c2:00:00:02 dev eth2 self permanent\n01:80:c2:00:00:00 dev eth2 self permanent\n01:80:c2:00:00:03 dev eth2 self permanent\n01:80:c2:00:00:0e dev eth2 self permanent\n33:33:ff:25:62:11 dev eth2 self permanent\n33:33:00:00:00:01 dev bond0 self permanent\n01:00:5e:00:00:01 dev bond0 self permanent\n01:80:c2:00:00:00 dev bond0 self permanent\n01:80:c2:00:00:03 dev bond0 self permanent\n01:80:c2:00:00:0e dev bond0 self permanent\n33:33:ff:25:62:11 dev bond0 self permanent\n"
+    }
+][
+    {
+        "status": 0,
+        "timestamp": 1610377086619,
+        "cmd": "/sbin/bridge fdb show",
+        "devtype": "linux",
+        "namespace": "eos",
+        "hostname": "firewall01",
+        "address": "10.255.2.169",
+        "version": "18.04",
+        "data": "01:00:5e:00:00:01 dev eth0 self permanent\n33:33:00:00:00:01 dev eth0 self permanent\n33:33:ff:fd:3d:c8 dev eth0 self permanent\n01:80:c2:00:00:00 dev eth0 self permanent\n01:80:c2:00:00:03 dev eth0 self permanent\n01:80:c2:00:00:0e dev eth0 self permanent\n01:00:5e:00:00:01 dev eth1 self permanent\n01:80:c2:00:00:21 dev eth1 self permanent\n33:33:00:00:00:01 dev eth1 self permanent\n33:33:00:00:00:02 dev eth1 self permanent\n01:00:5e:00:00:01 dev eth2 self permanent\n01:80:c2:00:00:21 dev eth2 self permanent\n33:33:00:00:00:01 dev eth2 self permanent\n33:33:00:00:00:02 dev eth2 self permanent\n33:33:00:00:00:01 dev eth1.2 self permanent\n01:00:5e:00:00:01 dev eth1.2 self permanent\n33:33:00:00:00:02 dev eth1.2 self permanent\n33:33:00:00:00:01 dev eth1.3 self permanent\n01:00:5e:00:00:01 dev eth1.3 self permanent\n33:33:00:00:00:02 dev eth1.3 self permanent\n33:33:00:00:00:01 dev eth1.4 self permanent\n01:00:5e:00:00:01 dev eth1.4 self permanent\n33:33:00:00:00:02 dev eth1.4 self permanent\n33:33:00:00:00:01 dev eth2.2 self permanent\n01:00:5e:00:00:01 dev eth2.2 self permanent\n33:33:00:00:00:02 dev eth2.2 self permanent\n33:33:00:00:00:01 dev eth2.3 self permanent\n01:00:5e:00:00:01 dev eth2.3 self permanent\n33:33:00:00:00:02 dev eth2.3 self permanent\n33:33:00:00:00:01 dev eth2.4 self permanent\n01:00:5e:00:00:01 dev eth2.4 self permanent\n33:33:00:00:00:02 dev eth2.4 self permanent\n"
     }
 ][
     {
         "status": 200,
-        "timestamp": 1606030435411,
+        "timestamp": 1610377086964,
         "cmd": "show mac-address-table unicast",
         "devtype": "eos",
         "namespace": "eos",
         "hostname": "exit02",
-        "address": "192.168.121.46",
-        "data": {
-            "multicastTable": {
-                "tableEntries": []
-            },
-            "unicastTable": {
-                "tableEntries": []
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435410,
-        "cmd": "show mac-address-table unicast",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf01",
-        "address": "192.168.121.5",
+        "address": "10.255.2.254",
         "data": {
             "multicastTable": {
                 "tableEntries": []
@@ -104,165 +74,116 @@
             "unicastTable": {
                 "tableEntries": [
                     {
-                        "macAddress": "44:38:39:38:92:9d",
-                        "interface": "Ethernet3",
-                        "entryType": "static",
-                        "vlanId": 13
+                        "macAddress": "44:38:39:24:3f:16",
+                        "lastMove": 1609561182.801289,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
                     },
                     {
-                        "macAddress": "44:38:39:38:92:9d",
-                        "interface": "Ethernet3",
-                        "entryType": "static",
-                        "vlanId": 24
+                        "macAddress": "44:38:39:33:d8:43",
+                        "lastMove": 1610348249.901037,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
                     },
                     {
-                        "macAddress": "44:38:39:38:92:9d",
-                        "interface": "Ethernet3",
-                        "entryType": "static",
+                        "macAddress": "44:38:39:81:30:22",
+                        "lastMove": 1609561182.612098,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "lastMove": 1609561197.710061,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "lastMove": 1609561187.645962,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
                         "vlanId": 4094
                     }
                 ]
             }
         }
-    }
-][
+    },
     {
         "status": 200,
-        "timestamp": 1606030435410,
-        "cmd": "show mac-address-table unicast",
+        "timestamp": 1610377086964,
+        "cmd": "show vxlan address-table",
         "devtype": "eos",
         "namespace": "eos",
-        "hostname": "leaf02",
-        "address": "192.168.121.22",
+        "hostname": "exit02",
+        "address": "10.255.2.254",
         "data": {
-            "multicastTable": {
-                "tableEntries": []
-            },
-            "unicastTable": {
-                "tableEntries": [
-                    {
-                        "macAddress": "44:38:39:90:61:ba",
-                        "interface": "Ethernet3",
-                        "entryType": "static",
-                        "vlanId": 13
-                    },
-                    {
-                        "macAddress": "44:38:39:90:61:ba",
-                        "interface": "Ethernet3",
-                        "entryType": "static",
-                        "vlanId": 24
-                    },
-                    {
-                        "macAddress": "44:38:39:90:61:ba",
-                        "interface": "Ethernet3",
-                        "entryType": "static",
-                        "vlanId": 4094
-                    }
-                ]
-            }
+            "addresses": [
+                {
+                    "lastMove": 250.56892862,
+                    "macAddress": "44:38:39:24:3f:16",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 787317.668677314,
+                    "macAddress": "44:38:39:33:d8:43",
+                    "vtep": "10.0.0.31",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 250.37973794,
+                    "macAddress": "44:38:39:81:30:22",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 265.477700698,
+                    "macAddress": "44:38:39:99:c7:9e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 255.413601781,
+                    "macAddress": "44:38:39:e3:19:2e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                }
+            ]
         }
     }
 ][
     {
         "status": 200,
-        "timestamp": 1606030435413,
-        "cmd": "show mac-address-table unicast",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf04",
-        "address": "192.168.121.235",
-        "data": {
-            "multicastTable": {
-                "tableEntries": []
-            },
-            "unicastTable": {
-                "tableEntries": [
-                    {
-                        "macAddress": "44:38:39:2f:ce:22",
-                        "interface": "Port-Channel12",
-                        "entryType": "static",
-                        "vlanId": 13
-                    },
-                    {
-                        "macAddress": "44:38:39:2f:ce:22",
-                        "interface": "Port-Channel12",
-                        "entryType": "static",
-                        "vlanId": 24
-                    },
-                    {
-                        "macAddress": "44:38:39:2f:ce:22",
-                        "interface": "Port-Channel12",
-                        "entryType": "static",
-                        "vlanId": 4094
-                    }
-                ]
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435362,
-        "cmd": "show mac-address-table unicast",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "leaf03",
-        "address": "192.168.121.88",
-        "data": {
-            "multicastTable": {
-                "tableEntries": []
-            },
-            "unicastTable": {
-                "tableEntries": [
-                    {
-                        "macAddress": "44:38:39:93:f1:8c",
-                        "interface": "Port-Channel12",
-                        "entryType": "static",
-                        "vlanId": 13
-                    },
-                    {
-                        "macAddress": "44:38:39:93:f1:8c",
-                        "interface": "Port-Channel12",
-                        "entryType": "static",
-                        "vlanId": 24
-                    },
-                    {
-                        "macAddress": "44:38:39:93:f1:8c",
-                        "interface": "Port-Channel12",
-                        "entryType": "static",
-                        "vlanId": 4094
-                    }
-                ]
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435462,
-        "cmd": "show mac-address-table unicast",
-        "devtype": "eos",
-        "namespace": "eos",
-        "hostname": "spine01",
-        "address": "192.168.121.42",
-        "data": {
-            "multicastTable": {
-                "tableEntries": []
-            },
-            "unicastTable": {
-                "tableEntries": []
-            }
-        }
-    }
-][
-    {
-        "status": 200,
-        "timestamp": 1606030435498,
+        "timestamp": 1610377087002,
         "cmd": "show mac-address-table unicast",
         "devtype": "eos",
         "namespace": "eos",
         "hostname": "spine02",
-        "address": "192.168.121.73",
+        "address": "10.255.2.119",
         "data": {
             "multicastTable": {
                 "tableEntries": []
@@ -270,17 +191,146 @@
             "unicastTable": {
                 "tableEntries": []
             }
+        }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087002,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine02",
+        "address": "10.255.2.119",
+        "data": {
+            "addresses": []
         }
     }
 ][
     {
         "status": 200,
-        "timestamp": 1606030435630,
+        "timestamp": 1610377087027,
         "cmd": "show mac-address-table unicast",
         "devtype": "eos",
         "namespace": "eos",
         "hostname": "exit01",
-        "address": "192.168.121.104",
+        "address": "10.255.2.251",
+        "data": {
+            "multicastTable": {
+                "tableEntries": []
+            },
+            "unicastTable": {
+                "tableEntries": [
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "lastMove": 1609561182.428317,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "lastMove": 1609561182.260587,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "lastMove": 1609561197.359378,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    },
+                    {
+                        "macAddress": "44:38:39:c3:55:cb",
+                        "lastMove": 1610348249.852643,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "lastMove": 1609561187.303643,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 4094
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087027,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "exit01",
+        "address": "10.255.2.251",
+        "data": {
+            "addresses": [
+                {
+                    "lastMove": 250.183879467,
+                    "macAddress": "44:38:39:24:3f:16",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 250.016149032,
+                    "macAddress": "44:38:39:81:30:22",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 265.114940763,
+                    "macAddress": "44:38:39:99:c7:9e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 787317.608205018,
+                    "macAddress": "44:38:39:c3:55:cb",
+                    "vtep": "10.0.0.32",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                },
+                {
+                    "lastMove": 255.059204949,
+                    "macAddress": "44:38:39:e3:19:2e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 4094
+                }
+            ]
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377087058,
+        "cmd": "show mac-address-table unicast",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine01",
+        "address": "10.255.2.120",
         "data": {
             "multicastTable": {
                 "tableEntries": []
@@ -289,5 +339,657 @@
                 "tableEntries": []
             }
         }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087058,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "spine01",
+        "address": "10.255.2.120",
+        "data": {
+            "addresses": []
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377087140,
+        "cmd": "show mac-address-table unicast",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf04",
+        "address": "10.255.2.188",
+        "data": {
+            "multicastTable": {
+                "tableEntries": []
+            },
+            "unicastTable": {
+                "tableEntries": [
+                    {
+                        "macAddress": "1e:87:9f:6d:10:7e",
+                        "lastMove": 1610348257.817179,
+                        "interface": "Port-Channel3",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 20
+                    },
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 20
+                    },
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "72:ff:44:3a:3a:08",
+                        "lastMove": 1610348251.304119,
+                        "interface": "Port-Channel4",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "fa:ba:1e:1f:b5:de",
+                        "lastMove": 1610348251.462056,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:33:d8:43",
+                        "lastMove": 1610348251.726453,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "lastMove": 1609561198.110927,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:c3:55:cb",
+                        "lastMove": 1610348251.742881,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "lastMove": 1609561188.043303,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 4094
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087140,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf04",
+        "address": "10.255.2.188",
+        "data": {
+            "addresses": [
+                {
+                    "lastMove": 787318.373821353,
+                    "macAddress": "fa:ba:1e:1f:b5:de",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 30
+                },
+                {
+                    "lastMove": 787318.638217952,
+                    "macAddress": "44:38:39:33:d8:43",
+                    "vtep": "10.0.0.31",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 265.022691403,
+                    "macAddress": "44:38:39:99:c7:9e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 787318.654646689,
+                    "macAddress": "44:38:39:c3:55:cb",
+                    "vtep": "10.0.0.32",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 254.955068061,
+                    "macAddress": "44:38:39:e3:19:2e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                }
+            ]
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377087189,
+        "cmd": "show mac-address-table unicast",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf01",
+        "address": "10.255.2.189",
+        "data": {
+            "multicastTable": {
+                "tableEntries": []
+            },
+            "unicastTable": {
+                "tableEntries": [
+                    {
+                        "macAddress": "16:76:ce:25:62:11",
+                        "lastMove": 1610348253.281277,
+                        "interface": "Port-Channel3",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 10
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 10
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "72:ff:44:3a:3a:08",
+                        "lastMove": 1610348250.031822,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "fa:ba:1e:1f:b5:de",
+                        "lastMove": 1610348250.046606,
+                        "interface": "Port-Channel4",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "lastMove": 1609561188.683436,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:33:d8:43",
+                        "lastMove": 1610348250.333061,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "lastMove": 1609561188.725327,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:c3:55:cb",
+                        "lastMove": 1610348250.354255,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 4094
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087189,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf01",
+        "address": "10.255.2.189",
+        "data": {
+            "addresses": [
+                {
+                    "lastMove": 787321.939787012,
+                    "macAddress": "72:ff:44:3a:3a:08",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 30
+                },
+                {
+                    "lastMove": 260.591399352,
+                    "macAddress": "44:38:39:24:3f:16",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 787322.241025481,
+                    "macAddress": "44:38:39:33:d8:43",
+                    "vtep": "10.0.0.31",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 260.633290415,
+                    "macAddress": "44:38:39:81:30:22",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 787322.262219752,
+                    "macAddress": "44:38:39:c3:55:cb",
+                    "vtep": "10.0.0.32",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                }
+            ]
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377087268,
+        "cmd": "show mac-address-table unicast",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf03",
+        "address": "10.255.2.190",
+        "data": {
+            "multicastTable": {
+                "tableEntries": []
+            },
+            "unicastTable": {
+                "tableEntries": [
+                    {
+                        "macAddress": "1e:87:9f:6d:10:7e",
+                        "lastMove": 1610348256.788834,
+                        "interface": "Port-Channel3",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 20
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 20
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "72:ff:44:3a:3a:08",
+                        "lastMove": 1610348250.343806,
+                        "interface": "Port-Channel4",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "fa:ba:1e:1f:b5:de",
+                        "lastMove": 1610348250.463104,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "44:38:39:33:d8:43",
+                        "lastMove": 1610348250.724051,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:99:c7:9e",
+                        "lastMove": 1609561197.83142,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:c3:55:cb",
+                        "lastMove": 1610348250.745163,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "lastMove": 1609561187.812495,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 4094
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087268,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf03",
+        "address": "10.255.2.190",
+        "data": {
+            "addresses": [
+                {
+                    "lastMove": 787322.358984643,
+                    "macAddress": "fa:ba:1e:1f:b5:de",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 30
+                },
+                {
+                    "lastMove": 787322.619930999,
+                    "macAddress": "44:38:39:33:d8:43",
+                    "vtep": "10.0.0.31",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 269.727299976,
+                    "macAddress": "44:38:39:99:c7:9e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 787322.641043788,
+                    "macAddress": "44:38:39:c3:55:cb",
+                    "vtep": "10.0.0.32",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 259.708375252,
+                    "macAddress": "44:38:39:e3:19:2e",
+                    "vtep": "10.0.0.112",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                }
+            ]
+        }
+    }
+][
+    {
+        "status": 200,
+        "timestamp": 1610377087214,
+        "cmd": "show mac-address-table unicast",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf02",
+        "address": "10.255.2.191",
+        "data": {
+            "multicastTable": {
+                "tableEntries": []
+            },
+            "unicastTable": {
+                "tableEntries": [
+                    {
+                        "macAddress": "16:76:ce:25:62:11",
+                        "lastMove": 1610348252.061392,
+                        "interface": "Port-Channel3",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 10
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 10
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "72:ff:44:3a:3a:08",
+                        "lastMove": 1610348248.816598,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "fa:ba:1e:1f:b5:de",
+                        "lastMove": 1610348248.764305,
+                        "interface": "Port-Channel4",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 30
+                    },
+                    {
+                        "macAddress": "44:38:39:24:3f:16",
+                        "lastMove": 1609561197.62302,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:33:d8:43",
+                        "lastMove": 1610348249.134759,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:81:30:22",
+                        "lastMove": 1609561197.651103,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:c3:55:cb",
+                        "lastMove": 1610348249.163295,
+                        "interface": "Vxlan1",
+                        "moves": 1,
+                        "entryType": "dynamic",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 1006
+                    },
+                    {
+                        "macAddress": "44:38:39:e3:19:2e",
+                        "interface": "Port-Channel1",
+                        "entryType": "static",
+                        "vlanId": 4094
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "status": 200,
+        "timestamp": 1610377087214,
+        "cmd": "show vxlan address-table",
+        "devtype": "eos",
+        "namespace": "eos",
+        "hostname": "leaf02",
+        "address": "10.255.2.191",
+        "data": {
+            "addresses": [
+                {
+                    "lastMove": 787313.728800205,
+                    "macAddress": "72:ff:44:3a:3a:08",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 30
+                },
+                {
+                    "lastMove": 262.535222333,
+                    "macAddress": "44:38:39:24:3f:16",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 787314.046960518,
+                    "macAddress": "44:38:39:33:d8:43",
+                    "vtep": "10.0.0.31",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 262.563305808,
+                    "macAddress": "44:38:39:81:30:22",
+                    "vtep": "10.0.0.134",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                },
+                {
+                    "lastMove": 787314.075497141,
+                    "macAddress": "44:38:39:c3:55:cb",
+                    "vtep": "10.0.0.32",
+                    "addrType": "evpn",
+                    "interface": "Vx1",
+                    "moves": 1,
+                    "vlanId": 1006
+                }
+            ]
+        }
+    }
+][
+    {
+        "status": 0,
+        "timestamp": 1610377090712,
+        "cmd": "show ethernet-switching table detail | display json",
+        "devtype": "junos-qfx",
+        "namespace": "eos",
+        "hostname": "dcedge01",
+        "address": "10.255.2.250",
+        "version": 0,
+        "data": "{\n    \"l2ng-l2ald-rtb-macdb\" : [\n    {\n    }\n    ]\n}\n"
     }
 ]
